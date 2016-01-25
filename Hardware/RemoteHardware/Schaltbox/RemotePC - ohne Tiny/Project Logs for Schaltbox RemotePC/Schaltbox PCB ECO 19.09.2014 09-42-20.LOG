@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=J1-26
+Removed Pin From Net: NetName=GND Pin=J1-27
+Added Component: Designator=IC4(M08A_N)
+Added Pin To Net: NetName=NetC1_2 Pin=IC4-1
+Added Pin To Net: NetName=V5 Pin=IC4-4
+Added Pin To Net: NetName=GND Pin=IC4-6
+Added Pin To Net: NetName=NetC2_P Pin=IC4-7
+Added Pin To Net: NetName=NetC1_1 Pin=IC4-8

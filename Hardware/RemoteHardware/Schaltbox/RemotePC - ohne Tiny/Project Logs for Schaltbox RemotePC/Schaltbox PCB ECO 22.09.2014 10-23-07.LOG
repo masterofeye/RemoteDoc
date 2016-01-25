@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=CANL Pin=X6-2
+Added Pin To Net: NetName=GND Pin=X6-3
+Added Pin To Net: NetName=GND Pin=X6-6
+Added Pin To Net: NetName=CANH Pin=X6-7
+Added Pin To Net: NetName=GND Pin=X6-10
+Added Pin To Net: NetName=GND Pin=X6-11
+Added Class: Name=Schaltbox_Switch
+Added Room: Name=Schaltbox_Switch

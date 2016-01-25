@@ -1,0 +1,87 @@
+Removed Pin From Net: NetName=NORMCLOSE Pin=IC11-1
+Removed Pin From Net: NetName=PCGND Pin=IC11-2
+Removed Pin From Net: NetName=NORMOPEN Pin=IC12-2
+Removed Pin From Net: NetName=V5 Pin=IC12-4
+Removed Pin From Net: NetName=GND Pin=IC12-6
+Removed Pin From Net: NetName=UB+ Pin=IC12-7
+Removed Pin From Net: NetName=NetC1_1 Pin=IC12-8
+Removed Pin From Net: NetName=NetC1_1 Pin=L2-1
+Removed Pin From Net: NetName=V5 Pin=L2-2
+Removed Pin From Net: NetName=NORMCLOSE Pin=R5-1
+Removed Pin From Net: NetName=V5 Pin=R5-2
+Removed Pin From Net: NetName=V5 Pin=R6-2
+Removed Pin From Net: NetName=NetIC13_1 Pin=R7-1
+Removed Pin From Net: NetName=V5 Pin=R7-2
+Removed Pin From Net: NetName=NetIC14_1 Pin=R9-1
+Removed Pin From Net: NetName=V5 Pin=R9-2
+Removed Pin From Net: NetName=NIVCOD_RES Pin=R11-1
+Removed Pin From Net: NetName=V5 Pin=R11-2
+Removed Pin From Net: NetName=NetREL14_1 Pin=X25-1
+Removed Pin From Net: NetName=NetREL14_7 Pin=X25-2
+Removed Pin From Net: NetName=NetREL14_14 Pin=X25-3
+Removed Pin From Net: NetName=NetREL15_1 Pin=X26-1
+Removed Pin From Net: NetName=NetREL15_7 Pin=X26-2
+Removed Pin From Net: NetName=NetREL15_14 Pin=X26-3
+Removed Pin From Net: NetName=NetREL16_1 Pin=X27-1
+Removed Pin From Net: NetName=NetREL16_7 Pin=X27-2
+Removed Pin From Net: NetName=NetREL16_14 Pin=X27-3
+Change Component DesignItemId : Designator=IC12 Old DesignItemId=ASSR-1410 New DesignItemId=LM2672M-5.0
+Change Component Footprint: Designator=R6 Old Footprint=R0603MD New Footprint=R0603HD
+Change Component Footprint: Designator=IC12 Old Footprint=SO-4 New Footprint=M08A_N
+Change Component Comment : Designator=R11 Old Comment=330R New Comment=10R
+Change Component Comment : Designator=R9 Old Comment=330R New Comment=100R
+Change Component Comment : Designator=IC12 Old Comment=ASSR-1410 New Comment=LM2672M-5.0
+Change Component Library : Designator=R9 Old Library=RCL - SSH_neu.SchLib New Library=RF_RCL - SSH.SchLib
+Change Component Library : Designator=R11 Old Library=RCL - SSH_neu.SchLib New Library=RF_RCL - SSH.SchLib
+Added Component: Designator=IC26(SO-4)
+Added Component: Designator=IC27(SO-4)
+Added Component: Designator=L2(L_B82464-G4)
+Added Component: Designator=R25(R0603MD)
+Added Component: Designator=R26(R0603MD)
+Added Component: Designator=R27(R0603MD)
+Added Component: Designator=R28(R0603MD)
+Added Component: Designator=R29(R0603MD)
+Added Component: Designator=X25(Buchse_1x3)
+Added Component: Designator=X26(Buchse_1x3)
+Added Component: Designator=X27(Buchse_1x3)
+Added Pin To Net: NetName=NetIC10_2 Pin=IC11-1
+Added Pin To Net: NetName=NetC1_2 Pin=IC12-1
+Added Pin To Net: NetName=V5 Pin=IC12-4
+Added Pin To Net: NetName=GND Pin=IC12-6
+Added Pin To Net: NetName=UB+ Pin=IC12-7
+Added Pin To Net: NetName=NetC1_1 Pin=IC12-8
+Added Pin To Net: NetName=NORMCLOSE Pin=IC26-1
+Added Pin To Net: NetName=PCGND Pin=IC26-2
+Added Pin To Net: NetName=NORMOPEN Pin=IC27-2
+Added Pin To Net: NetName=NetC1_1 Pin=L2-1
+Added Pin To Net: NetName=V5 Pin=L2-2
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=NetIC6_4 Pin=R5-2
+Added Pin To Net: NetName=NetIC9_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=SOUND Pin=R7-1
+Added Pin To Net: NetName=NetL1_1 Pin=R9-1
+Added Pin To Net: NetName=NetIC10_3 Pin=R9-2
+Added Pin To Net: NetName=NetIC11_3 Pin=R11-1
+Added Pin To Net: NetName=NetL1_1 Pin=R11-2
+Added Pin To Net: NetName=NORMCLOSE Pin=R25-1
+Added Pin To Net: NetName=V5 Pin=R25-2
+Added Pin To Net: NetName=NetIC13_1 Pin=R26-1
+Added Pin To Net: NetName=V5 Pin=R26-2
+Added Pin To Net: NetName=V5 Pin=R27-2
+Added Pin To Net: NetName=NIVCOD_RES Pin=R28-1
+Added Pin To Net: NetName=V5 Pin=R28-2
+Added Pin To Net: NetName=NetIC14_1 Pin=R29-1
+Added Pin To Net: NetName=V5 Pin=R29-2
+Added Pin To Net: NetName=NetREL14_1 Pin=X25-1
+Added Pin To Net: NetName=NetREL14_7 Pin=X25-2
+Added Pin To Net: NetName=NetREL14_14 Pin=X25-3
+Added Pin To Net: NetName=NetREL15_1 Pin=X26-1
+Added Pin To Net: NetName=NetREL15_7 Pin=X26-2
+Added Pin To Net: NetName=NetREL15_14 Pin=X26-3
+Added Pin To Net: NetName=NetREL16_1 Pin=X27-1
+Added Pin To Net: NetName=NetREL16_7 Pin=X27-2
+Added Pin To Net: NetName=NetREL16_14 Pin=X27-3
+Added Pin To Net: NetName=NetIC27_1 Pin=IC27-1
+Added Pin To Net: NetName=NetIC27_1 Pin=R27-1
+Added Net: Name=NetIC27_1

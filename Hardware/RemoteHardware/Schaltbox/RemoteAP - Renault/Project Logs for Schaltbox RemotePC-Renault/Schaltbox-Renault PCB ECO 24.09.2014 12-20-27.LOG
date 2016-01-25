@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=CANL1-OUT Pin=REL7-7
+Removed Pin From Net: NetName=CANL1-OUT Pin=REL7-8
+Added Pin To Net: NetName=CANL2-OUT Pin=REL7-7
+Added Pin To Net: NetName=CANL2-OUT Pin=REL7-8

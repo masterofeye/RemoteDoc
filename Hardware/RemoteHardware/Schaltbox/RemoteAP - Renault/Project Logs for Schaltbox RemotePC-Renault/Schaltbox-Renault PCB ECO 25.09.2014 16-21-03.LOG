@@ -1,0 +1,139 @@
+Removed Pin From Net: NetName=NetIC10_2 Pin=IC11-1
+Removed Pin From Net: NetName=NetIC11_3 Pin=IC11-3
+Removed Pin From Net: NetName=NetIC11_4 Pin=IC11-4
+Removed Pin From Net: NetName=NetC1_2 Pin=IC12-1
+Removed Pin From Net: NetName=V5 Pin=IC12-4
+Removed Pin From Net: NetName=GND Pin=IC12-6
+Removed Pin From Net: NetName=UB+ Pin=IC12-7
+Removed Pin From Net: NetName=NetC1_1 Pin=IC12-8
+Removed Pin From Net: NetName=NORMCLOSE Pin=IC13-1
+Removed Pin From Net: NetName=PCGND Pin=IC13-2
+Removed Pin From Net: NetName=GND Pin=IC16-3
+Removed Pin From Net: NetName=GND Pin=IC17-3
+Removed Pin From Net: NetName=NIVCOD_RES Pin=IC18-1
+Removed Pin From Net: NetName=PCGND Pin=IC18-2
+Removed Pin From Net: NetName=NIVCOD Pin=IC18-4
+Removed Pin From Net: NetName=NetC1_1 Pin=L2-1
+Removed Pin From Net: NetName=V5 Pin=L2-2
+Removed Pin From Net: NetName=GND Pin=R5-1
+Removed Pin From Net: NetName=NetIC6_4 Pin=R5-2
+Removed Pin From Net: NetName=NetIC9_1 Pin=R6-1
+Removed Pin From Net: NetName=NetR6_2 Pin=R6-2
+Removed Pin From Net: NetName=SOUND Pin=R7-1
+Removed Pin From Net: NetName=NORMCLOSE Pin=R13-1
+Removed Pin From Net: NetName=V5 Pin=R13-2
+Removed Pin From Net: NetName=NetIC14_1 Pin=R14-1
+Removed Pin From Net: NetName=V5 Pin=R14-2
+Removed Pin From Net: NetName=NetIC15_1 Pin=R15-1
+Removed Pin From Net: NetName=V5 Pin=R15-2
+Removed Pin From Net: NetName=NetREL14_1 Pin=X25-1
+Removed Pin From Net: NetName=NetREL14_7 Pin=X25-2
+Removed Pin From Net: NetName=NetREL14_14 Pin=X25-3
+Removed Pin From Net: NetName=NetREL15_1 Pin=X26-1
+Removed Pin From Net: NetName=NetREL15_7 Pin=X26-2
+Removed Pin From Net: NetName=NetREL15_14 Pin=X26-3
+Removed Pin From Net: NetName=NetREL16_1 Pin=X27-1
+Removed Pin From Net: NetName=NetREL16_7 Pin=X27-2
+Removed Pin From Net: NetName=NetREL16_14 Pin=X27-3
+Change Component DesignItemId : Designator=IC12 Old DesignItemId=LM2672M-5.0 New DesignItemId=ASSR-1410
+Change Component Footprint: Designator=IC12 Old Footprint=M08A_N New Footprint=SO-4
+Change Component Footprint: Designator=R5 Old Footprint=R0603HD New Footprint=R0603MD
+Change Component Footprint: Designator=R6 Old Footprint=R0603HD New Footprint=R0603MD
+Change Component Comment : Designator=R5 Old Comment=1k New Comment=330R
+Change Component Comment : Designator=R7 Old Comment=240R New Comment=330R
+Change Component Comment : Designator=IC12 Old Comment=LM2672M-5.0 New Comment=ASSR-1410
+Change Component Designator: OldDesignator=IC19 NewDesignator=IC17
+Change Component Designator: OldDesignator=IC20 NewDesignator=IC18
+Change Component Designator: OldDesignator=IC21 NewDesignator=IC19
+Change Component Designator: OldDesignator=IC22 NewDesignator=IC20
+Change Component Designator: OldDesignator=IC23 NewDesignator=IC21
+Change Component Designator: OldDesignator=IC24 NewDesignator=IC22
+Change Component Designator: OldDesignator=IC25 NewDesignator=IC23
+Change Component Designator: OldDesignator=IC26 NewDesignator=IC24
+Change Component Designator: OldDesignator=IC27 NewDesignator=IC25
+Change Component Designator: OldDesignator=R16 NewDesignator=R11
+Change Component Designator: OldDesignator=R17 NewDesignator=R13
+Change Component Designator: OldDesignator=R18 NewDesignator=R9
+Change Component Designator: OldDesignator=R19 NewDesignator=R14
+Change Component Designator: OldDesignator=R20 NewDesignator=R15
+Change Component Designator: OldDesignator=R21 NewDesignator=R16
+Change Component Designator: OldDesignator=R22 NewDesignator=R17
+Change Component Designator: OldDesignator=R23 NewDesignator=R18
+Change Component Designator: OldDesignator=R24 NewDesignator=R19
+Change Component Designator: OldDesignator=R25 NewDesignator=R20
+Change Component Designator: OldDesignator=R26 NewDesignator=R21
+Change Component Designator: OldDesignator=R27 NewDesignator=R22
+Change Component Designator: OldDesignator=R28 NewDesignator=R23
+Change Component Designator: OldDesignator=R29 NewDesignator=R24
+Added Component: Designator=IC11(SO-4)
+Added Component: Designator=IC12(M08A_N)
+Added Component: Designator=L2(L_B82464-G4)
+Added Component: Designator=R5(R0603HD)
+Added Component: Designator=R6(R0603HD)
+Added Component: Designator=R7(R0603MD)
+Added Component: Designator=X25(Buchse_1x3)
+Added Component: Designator=X26(Buchse_1x3)
+Added Component: Designator=X27(Buchse_1x3)
+Added Pin To Net: NetName=NetIC10_2 Pin=IC11-1
+Added Pin To Net: NetName=NORMCLOSE Pin=IC11-1
+Added Pin To Net: NetName=PCGND Pin=IC11-2
+Added Pin To Net: NetName=NetIC11_3 Pin=IC11-3
+Added Pin To Net: NetName=NetIC11_4 Pin=IC11-4
+Added Pin To Net: NetName=NetC1_2 Pin=IC12-1
+Added Pin To Net: NetName=V5 Pin=IC12-4
+Added Pin To Net: NetName=GND Pin=IC12-6
+Added Pin To Net: NetName=UB+ Pin=IC12-7
+Added Pin To Net: NetName=NetC1_1 Pin=IC12-8
+Added Pin To Net: NetName=GND Pin=IC13-3
+Added Pin To Net: NetName=GND Pin=IC15-3
+Added Pin To Net: NetName=NIVCOD Pin=IC15-4
+Added Pin To Net: NetName=NIVCOD_RES Pin=IC16-1
+Added Pin To Net: NetName=PCGND Pin=IC16-2
+Added Pin To Net: NetName=NetC1_1 Pin=L2-1
+Added Pin To Net: NetName=V5 Pin=L2-2
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=NORMCLOSE Pin=R5-1
+Added Pin To Net: NetName=NetIC6_4 Pin=R5-2
+Added Pin To Net: NetName=V5 Pin=R5-2
+Added Pin To Net: NetName=NetIC9_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=V5 Pin=R6-2
+Added Pin To Net: NetName=SOUND Pin=R7-1
+Added Pin To Net: NetName=V5 Pin=R7-2
+Added Pin To Net: NetName=NetIC14_1 Pin=R9-1
+Added Pin To Net: NetName=NetIC15_1 Pin=R13-1
+Added Pin To Net: NetName=NetREL14_1 Pin=X25-1
+Added Pin To Net: NetName=NetREL14_7 Pin=X25-2
+Added Pin To Net: NetName=NetREL14_14 Pin=X25-3
+Added Pin To Net: NetName=NetREL15_1 Pin=X26-1
+Added Pin To Net: NetName=NetREL15_7 Pin=X26-2
+Added Pin To Net: NetName=NetREL15_14 Pin=X26-3
+Added Pin To Net: NetName=NetREL16_1 Pin=X27-1
+Added Pin To Net: NetName=NetREL16_7 Pin=X27-2
+Added Pin To Net: NetName=NetREL16_14 Pin=X27-3
+Change Net Name : Old Net Name=NetIC20_3 New Net Name=NetIC18_3
+Change Net Name : Old Net Name=NetIC21_1 New Net Name=NetIC19_1
+Change Net Name : Old Net Name=NetIC23_4 New Net Name=NetIC21_4
+Change Net Name : Old Net Name=NetIC24_4 New Net Name=NetIC22_4
+Change Net Name : Old Net Name=NetIC25_4 New Net Name=NetIC23_4
+Change Net Name : Old Net Name=NetIC26_1 New Net Name=NetIC24_1
+Change Net Name : Old Net Name=NetIC26_4 New Net Name=NetIC24_4
+Change Net Name : Old Net Name=NetIC27_4 New Net Name=NetIC25_4
+Change Net Name : Old Net Name=NORMOPEN New Net Name=NIVCOD_GND
+Change Net Name : Old Net Name=PARKING BREAK New Net Name=WASHER
+Change Net Name : Old Net Name=PARKING BREAK-NO New Net Name=WASHER-NO
+Added Pin To Net: NetName=NetIC12_1 Pin=IC12-1
+Added Pin To Net: NetName=NetIC12_1 Pin=R6-1
+Added Net: Name=NetIC12_1
+Added Pin To Net: NetName=NetIC13_1 Pin=IC13-1
+Added Pin To Net: NetName=NetIC13_1 Pin=R7-1
+Added Net: Name=NetIC13_1
+Added Pin To Net: NetName=NetIC16_3 Pin=IC16-3
+Added Pin To Net: NetName=NetIC16_3 Pin=R14-2
+Added Net: Name=NetIC16_3
+Added Pin To Net: NetName=NORMOPEN Pin=IC12-2
+Added Net: Name=NORMOPEN
+Added Pin To Net: NetName=PARKING BREAK-NO Pin=IC13-4
+Added Net: Name=PARKING BREAK-NO
+Added Pin To Net: NetName=PARKING BREAK Pin=IC13-2
+Added Net: Name=PARKING BREAK

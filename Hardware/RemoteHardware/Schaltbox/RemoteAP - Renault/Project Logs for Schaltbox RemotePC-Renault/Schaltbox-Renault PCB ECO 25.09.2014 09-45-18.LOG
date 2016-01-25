@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=V5 Pin=REL15-2
+Removed Pin From Net: NetName=SOUND Pin=REL15-6
+Removed Pin From Net: NetName=V5 Pin=REL17-2
+Removed Pin From Net: NetName=SOUND Pin=REL17-6
+Added Component: Designator=R?(R0603MD)
+Added Pin To Net: NetName=SOUND Pin=IC17-1
+Added Pin To Net: NetName=PCGND Pin=IC18-2
+Added Pin To Net: NetName=SOUND Pin=R?-1
+Added Pin To Net: NetName=V5 Pin=R?-2
+Added Pin To Net: NetName=NetIC17_2 Pin=IC17-2
+Added Pin To Net: NetName=NetIC17_2 Pin=IC18-1
+Added Net: Name=NetIC17_2

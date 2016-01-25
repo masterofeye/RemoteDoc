@@ -1,0 +1,118 @@
+Removed Pin From Net: NetName=NetIC1_2 Pin=R1-2
+Removed Pin From Net: NetName=NetIC2_2 Pin=R2-2
+Removed Pin From Net: NetName=GND Pin=R7-1
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=GND Pin=R11-1
+Removed Pin From Net: NetName=GND Pin=T1-2
+Removed Pin From Net: NetName=GND Pin=T2-2
+Removed Pin From Net: NetName=GND Pin=T3-2
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Added Component: Designator=IC7(SOT363_MD_(SC88 / SC70-6))
+Added Component: Designator=REL?(DIP14 - HE700)
+Added Component: Designator=REL?(DIP14 - HE700)
+Added Component: Designator=REL?(DIP14 - HE700)
+Added Component: Designator=REL?(DIP14 - HE700)
+Added Component: Designator=REL?(DIP14 - HE700)
+Added Component: Designator=X17(USB_TypB)
+Added Component: Designator=X18(HDR2X5)
+Added Pin To Net: NetName=GND Pin=IC7-2
+Added Pin To Net: NetName=NetIC1_2 Pin=R1-1
+Added Pin To Net: NetName=NetIC2_2 Pin=R2-1
+Added Pin To Net: NetName=V5 Pin=REL?-2
+Added Pin To Net: NetName=V5 Pin=REL?-2
+Added Pin To Net: NetName=V5 Pin=REL?-2
+Added Pin To Net: NetName=V5 Pin=REL?-2
+Added Pin To Net: NetName=V5 Pin=REL?-2
+Added Pin To Net: NetName=IDO 15 Pin=REL?-6
+Added Pin To Net: NetName=CANL1-BREAK Pin=X1-15
+Added Pin To Net: NetName=CANL1-GND Pin=X1-16
+Added Pin To Net: NetName=CANH1-TO Pin=X1-17
+Added Pin To Net: NetName=SHUNT Pin=X1-18
+Added Pin To Net: NetName=GND Pin=X1-29
+Added Pin To Net: NetName=CANL1-TO Pin=X1-34
+Added Pin To Net: NetName=CANH1-BREAK Pin=X1-35
+Added Pin To Net: NetName=CANH1-GND Pin=X1-36
+Added Pin To Net: NetName=CENTRONIX 1 Pin=X2-1
+Added Pin To Net: NetName=CENTRONIX 3 Pin=X2-2
+Added Pin To Net: NetName=CENTRONIX 5 Pin=X2-3
+Added Pin To Net: NetName=CENTRONIX 7 Pin=X2-4
+Added Pin To Net: NetName=CENTRONIX 9 Pin=X2-5
+Added Pin To Net: NetName=CENTRONIX 11 Pin=X2-6
+Added Pin To Net: NetName=CENTRONIX 13 Pin=X2-7
+Added Pin To Net: NetName=CENTRONIX 15 Pin=X2-8
+Added Pin To Net: NetName=CENTRONIX 17 Pin=X2-9
+Added Pin To Net: NetName=CENTRONIX 19 Pin=X2-10
+Added Pin To Net: NetName=CENTRONIX 21 Pin=X2-11
+Added Pin To Net: NetName=CENTRONIX 23 Pin=X2-12
+Added Pin To Net: NetName=CENTRONIX 25 Pin=X2-13
+Added Pin To Net: NetName=CENTRONIX 27 Pin=X2-14
+Added Pin To Net: NetName=CENTRONIX 29 Pin=X2-15
+Added Pin To Net: NetName=CENTRONIX 31 Pin=X2-16
+Added Pin To Net: NetName=CENTRONIX 33 Pin=X2-17
+Added Pin To Net: NetName=CENTRONIX 35 Pin=X2-18
+Added Pin To Net: NetName=CENTRONIX 37 Pin=X2-19
+Added Pin To Net: NetName=CENTRONIX 39 Pin=X2-20
+Added Pin To Net: NetName=CENTRONIX 2 Pin=X3-1
+Added Pin To Net: NetName=CENTRONIX 4 Pin=X3-2
+Added Pin To Net: NetName=CENTRONIX 6 Pin=X3-3
+Added Pin To Net: NetName=CENTRONIX 8 Pin=X3-4
+Added Pin To Net: NetName=CENTRONIX 10 Pin=X3-5
+Added Pin To Net: NetName=CENTRONIX 12 Pin=X3-6
+Added Pin To Net: NetName=CENTRONIX 14 Pin=X3-7
+Added Pin To Net: NetName=CENTRONIX 16 Pin=X3-8
+Added Pin To Net: NetName=CENTRONIX 18 Pin=X3-9
+Added Pin To Net: NetName=CENTRONIX 20 Pin=X3-10
+Added Pin To Net: NetName=CENTRONIX 22 Pin=X3-11
+Added Pin To Net: NetName=CENTRONIX 24 Pin=X3-12
+Added Pin To Net: NetName=CENTRONIX 26 Pin=X3-13
+Added Pin To Net: NetName=CENTRONIX 28 Pin=X3-14
+Added Pin To Net: NetName=CENTRONIX 30 Pin=X3-15
+Added Pin To Net: NetName=CENTRONIX 32 Pin=X3-16
+Added Pin To Net: NetName=CENTRONIX 34 Pin=X3-17
+Added Pin To Net: NetName=CENTRONIX 36 Pin=X3-18
+Added Pin To Net: NetName=CENTRONIX 38 Pin=X3-19
+Added Pin To Net: NetName=CENTRONIX 40 Pin=X3-20
+Added Pin To Net: NetName=GND Pin=X17-B1
+Added Pin To Net: NetName=GND Pin=X17-B2
+Added Pin To Net: NetName=GND Pin=X17-GND
+Added Pin To Net: NetName=GND Pin=X18-4
+Added Pin To Net: NetName=V5 Pin=X18-5
+Added Pin To Net: NetName=V5 Pin=X18-6
+Change Net Name : Old Net Name=GND New Net Name=EGND
+Added Pin To Net: NetName=BILD_BOX Pin=REL?-6
+Added Pin To Net: NetName=BILD_BOX Pin=X1-33
+Added Net: Name=BILD_BOX
+Added Pin To Net: NetName=FLASH_REL Pin=REL?-6
+Added Pin To Net: NetName=FLASH_REL Pin=X1-30
+Added Net: Name=FLASH_REL
+Added Pin To Net: NetName=KL 30 ON Pin=R3-2
+Added Pin To Net: NetName=KL 30 ON Pin=X1-11
+Added Net: Name=KL 30 ON
+Added Pin To Net: NetName=NetIC7_4 Pin=IC7-4
+Added Pin To Net: NetName=NetIC7_4 Pin=X17-D+
+Added Pin To Net: NetName=NetIC7_4 Pin=X18-3
+Added Net: Name=NetIC7_4
+Added Pin To Net: NetName=NetIC7_5 Pin=IC7-5
+Added Pin To Net: NetName=NetIC7_5 Pin=X17-D-
+Added Pin To Net: NetName=NetIC7_5 Pin=X18-2
+Added Net: Name=NetIC7_5
+Added Pin To Net: NetName=SOUND Pin=REL?-6
+Added Pin To Net: NetName=SOUND Pin=REL?-6
+Added Pin To Net: NetName=SOUND Pin=X1-12
+Added Net: Name=SOUND
+Added Pin To Net: NetName=USB_1 Pin=X1-31
+Added Pin To Net: NetName=USB_1 Pin=X18-7
+Added Net: Name=USB_1
+Added Pin To Net: NetName=USB_2 Pin=X1-13
+Added Pin To Net: NetName=USB_2 Pin=X18-8
+Added Net: Name=USB_2
+Added Pin To Net: NetName=USB_3 Pin=X1-32
+Added Pin To Net: NetName=USB_3 Pin=X18-9
+Added Net: Name=USB_3
+Added Pin To Net: NetName=USB_4 Pin=X1-14
+Added Pin To Net: NetName=USB_4 Pin=X18-10
+Added Net: Name=USB_4
+Added Pin To Net: NetName=VBUS1 Pin=IC7-3
+Added Pin To Net: NetName=VBUS1 Pin=X17-VBUS
+Added Pin To Net: NetName=VBUS1 Pin=X18-1
+Added Net: Name=VBUS1

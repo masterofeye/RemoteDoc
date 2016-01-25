@@ -1,0 +1,65 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~Schaltbox RemotePC-Renault.PrjPCB|ReportField=ProjectFullPath~Z:\Projekte\RemoteAP\20 Hardware\35 PC Schaltbox\02 Hardware\2.2 Schaltpläne\Altium\RemoteAP - Renault\Schaltbox RemotePC-Renault.PrjPCB|ReportField=Title~Bill of Materials For Project [Schaltbox RemotePC-Renault.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~129|ReportField=ReportTime~10:25:53|ReportField=ReportDate~10.10.2014|ReportField=ReportDateTime~10.10.2014 10:25:53|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~Am Kalkofen 10|ReportField=Address3~D-61206 Wöllstadt|ReportField=Address4~Deutschland|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~10.10.2014|ReportField=CurrentTime~10:25:52|ReportField=Date~|ReportField=DocumentFullPathAndName~Z:\Projekte\RemoteAP\20 Hardware\35 PC Schaltbox\02 Hardware\2.2 Schaltpläne\Altium\RemoteAP - Renault\Schaltbox-Renault_Extension.SchDoc|ReportField=DocumentName~Schaltbox-Renault_Extension.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~09.10.2014|ReportField=Organization~Schleißheimer GmbH|ReportField=ProjectName~Schaltbox RemotePC-Renault.PrjPCB|ReportField=Revision~1.0|ReportField=Rule~|ReportField=SheetNumber~3|ReportField=SheetTotal~3|ReportField=Time~|ReportField=Title~Schaltbox für PC I/O Erweiterung|ReportField=PageSetup~Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=0.70|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9|ReportField=DataSourceFileName~Schaltbox RemotePC-Renault.PrjPCB|ReportField=DataSourceFullPath~Z:\Projekte\RemoteAP\20 Hardware\35 PC Schaltbox\02 Hardware\2.2 Schaltpläne\Altium\RemoteAP - Renault\Schaltbox RemotePC-Renault.PrjPCB
+68µF/16V|Capacitor Polarized|C1|ALU-D|Cap Pol|1
+100µF / 63V|Capacitor Polarized|C2|ALU-G|Cap Pol|1
+47µF/16V|Capacitor Polarized|C3|ALU-D|Cap Pol|1
+100n|Capacitor|C4, C5, C6, C7, C8, C9, C10|C0603MD|Cap|7
+VS-MURB2020CTPBF|Schottky Barrier Double Diode|D1|TO252-3_LD_(DPAK)|MURD620CT|1
+SMCJ36A|Suppressor Diode, unidirektional, 36V, 1500 W, fFotprint SMC|D2|SMC_MD_(DO214AB)|SMCJ36A|1
+JTH1524S05|15W-Wandler Single|DCDC1|JTH15|DC/DC-JTH15|1
+PESD5V0L5UY|ESD_Protection 5 Lines|IC1|SOT363_MD_(SC88 / SC70-6)|PESD5V0L5UY|1
+PESD2CAN|ESD-Protection CAN-Bus|IC2, IC3|SOT23_MD|PESD2CAN|2
+BTS 433 P||IC4, IC6, IC8|TO252-5_MD_(DPAK)|BTS443 P|3
+ASSR-1410|Solid State Relay, (Photo MOSFET)|IC5, IC7, IC9, IC10, IC11, IC13, IC14, IC15, IC16, IC17, IC18, IC19, IC20, IC21, IC22, IC23, IC24, IC25|SO-4|ASSR-1410|18
+Uebertrager|SM-LP-5001 Series -Surface Mount Line Matching Transformers|L1|SM-LP|Uebertrager|1
+1R|Resistor|R1|R2512HD|Res|1
+330R|Resistor|R2, R6, R13, R15, R16, R17, R21, R22, R26, R28, R29, R30, R31, R32, R33|R0603MD|Res|15
+330R|Resistor|R3|R0603HD|Res|1
+1k|Resistor|R4, R5, R8|R0603HD|Res|3
+240R|Resistor|R7|R0603MD|Res|1
+100R|Resistor|R9|R0603MD|Res|1
+22R|Resistor|R10|R0805MD|Res|1
+10R|Resistor|R11|R0603MD|Res|1
+5k6|Resistor|R12|R0603MD|Res|1
+1k5|Resistor|R14|R0603MD|Res|1
+90R9|Resistor|R18|R0805MD|Res|1
+110R|Resistor|R19|R0805MD|Res|1
+158R|Resistor|R20|R0805MD|Res|1
+10k85|Resistor|R23|R0805MD|Res|1
+549R|Resistor|R24|R0805MD|Res|1
+Relay-HFD41|Relay Hongfa Typ HFD41, SPDT, 2A/ 250VAC/30VDC|REL1|REL_HFD41|Relay-HFD41|1
+Relay-HE721|Hamlin Reed-Relay SPDT|REL2, REL3, REL4, REL5, REL6, REL7, REL8, REL9, REL10, REL11, REL12, REL13, REL14, REL15, REL16, REL17, REL18|DIP14 - HE700|Relay-HE721|17
+CAN Out 1|Header, 5-Pin, Dual row|X1|HDR2X5|Header 5X2|1
+Anschlusspin|Anschluss, Bohrung 1.2mm|X2, X3, X4, X9, X10, X11|Loetpad_Oval_0.8|Anschlusspin|6
+PC I/O|Schneid-Klemm-Verbinder 40pol|X5|SchneidKlemm_40|CON-40pol|1
+USB-Hub in|USB-Stecker-Typ A und B,THT|X6|USB_TypB|USB-Typ AB|1
+USB_Hub Int|Header, 5-Pin, Dual row|X7|HDR2X5|Header 5X2|1
+CAN Out 2|Header, 5-Pin, Dual row|X8|HDR2X5|Header 5X2|1
+UBout2|Anschluss, Bohrung 1.2mm|X12|Loetoese-3.2|Anschlusspin|1
+I-|Anschluss, Bohrung 1.2mm|X13|Loetpad_Oval_0.8|Anschlusspin|1
+I+|Anschluss, Bohrung 1.2mm|X14|Loetpad_Oval_0.8|Anschlusspin|1
+KL 30|Anschluss, Bohrung 1.2mm|X15|Loetoese-3.2|Anschlusspin|1
+Stifte 1x20|Stiftleiste, Buchsenleiste|X16, X18|Stifte_1x20|Stifte 1x20|2
+Cluster I/O|Schneid-Klemm-Verbinder 40pol|X17|SchneidKlemm_40|CON-40pol|1
+UB Switch|2pol Jumper RM 2.54|X19|Stifte_1x2|Jumper-2|1
+UBout3|Anschluss, Bohrung 1.2mm|X20|Loetoese-3.2|Anschlusspin|1
+LP in|2pol Jumper RM 2.54|X21|Stifte_1x2|Jumper-2|1
+Line Out|2pol Jumper RM 2.54|X22|Stifte_1x2|Jumper-2|1
+Vin|Anschluss, Bohrung 1.2mm|X23|Loetoese-3.2|Anschlusspin|1
+GND|Anschluss, Bohrung 1.2mm|X24|Loetoese-3.2|Anschlusspin|1
+Flash|3pol Jumper RM 2.54|X25|Stifte_1x3|Jumper-3|1
+Bild|3pol Jumper RM 2.54|X26|Stifte_1x3|Jumper-3|1
+In_use|3pol Jumper RM 2.54|X27|Stifte_1x3|Jumper-3|1
+ADAC Out|2pol Jumper RM 2.54|X28|Stifte_1x2|Jumper-2|1
+ADAC Control|Stecker 1reihig 6polig|X29|Stifte_1x6|Stecker-6pol|1
+Port|Stiftleiste, Buchsenleiste|X30|Stifte_1x20|Stifte 1x20|1
+PC I/O 2|Stift-, Buchs2x10, SchneidKlemm 20pol.|X31|SchneidKlemm_20|CON-2x10|1
+PC I/O 2 int|Stift-, Buchs2x10, SchneidKlemm 20pol.|X32|SchneidKlemm_20|CON-2x10|1
+PC I/O 3|Stift-, Buchs2x10, SchneidKlemm 20pol.|X33|SchneidKlemm_20|CON-2x10|1
+PC I/O 3 int|Stift-, Buchs2x10, SchneidKlemm 20pol.|X34|SchneidKlemm_20|CON-2x10|1
+Intern|2pol Jumper RM 2.54|X35|Stifte_1x2|Jumper-2|1
+V5V|Anschluss, Bohrung 1.2mm|X36|Loetpad_Oval_0.8|Anschlusspin|1
+PGND|Anschluss, Bohrung 1.2mm|X37|Loetpad_Oval_0.8|Anschlusspin|1
+Erweiterung|Stift-, Buchs2x10, SchneidKlemm 20pol.|X38, X39|SchneidKlemm_20|CON-2x10|2
+PWM 1|3pol Jumper RM 2.54|X40|Stifte_1x3|Jumper-3|1
+PWM 2|3pol Jumper RM 2.54|X41|Stifte_1x3|Jumper-3|1
+KL31|Anschluss, Bohrung 1.2mm|X42|Loetoese-3.2|Anschlusspin|1

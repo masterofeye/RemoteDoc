@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Schaltbox-Renault_iso.PcbDoc   10.10.2014  10:24:29
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Schaltbox-Renault_iso.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        0.3mm (11.811mil)        Round          95               948.39 mm (37.34 Inch)
+T2        0.7mm (27.559mil)        Round          3                34.44 mm (1.36 Inch)
+T3        0.8mm (31.496mil)        Round          146              902.87 mm (35.55 Inch)
+T4        0.9mm (35.433mil)        Round          33               240.95 mm (9.49 Inch)
+T5        0.92mm (36.221mil)       Round          4                6.50 mm (0.26 Inch)
+T6        1mm (39.37mil)           Round          18               100.65 mm (3.96 Inch)
+T7        1.1mm (43.307mil)        Round          276              1293.09 mm (50.91 Inch)
+T8        1.3mm (51.181mil)        Round          4                47.10 mm (1.85 Inch)
+T9        1.4mm (55.118mil)        Round          6                120.08 mm (4.73 Inch)
+T10       2.3mm (90.551mil)        Round          2                12.04 mm (0.47 Inch)
+T11       4.2mm (165.354mil)       Round          5                441.00 mm (17.36 Inch)
+---------------------------------------------------------------------------
+Totals                                            592              4147.12 mm (163.27 Inch)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

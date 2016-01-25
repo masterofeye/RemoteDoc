@@ -1,0 +1,10 @@
+Added Component: Designator=X7(HDR2X5)
+Added Component: Designator=X13(HDR2X5)
+Added Pin To Net: NetName=CANL1-OUT Pin=X7-2
+Added Pin To Net: NetName=CAN1GND Pin=X7-3
+Added Pin To Net: NetName=CAN1GND Pin=X7-6
+Added Pin To Net: NetName=CANH1-OUT Pin=X7-7
+Added Pin To Net: NetName=CANL2-OUT Pin=X13-2
+Added Pin To Net: NetName=CAN2GND Pin=X13-3
+Added Pin To Net: NetName=CAN2GND Pin=X13-6
+Added Pin To Net: NetName=CANH2-OUT Pin=X13-7
