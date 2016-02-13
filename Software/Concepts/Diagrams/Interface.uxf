@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>63</y>
+      <w>225</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>RW::QtPluginInterfaceDefinition
+--
+getModuleFactory() : AbstractFactory
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>369</y>
+      <w>387</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>/RW::VG::VideoGrabberFactory/
+--
+
+--
++ VideoGrabberFactory()
++ ~VideoGrabberFactory()
++ GetModule(tenSubModule) : RW_Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>153</y>
+      <w>387</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>/RW::AbstractModule/
+--
+
+--
++ AbstractModule()
++ ~AbstractModule()
+/+ Initialise(InitialiseControlStruct ControlStruct) : RW_Status/
+/+ Deinitialise(DeinitialiseControlStruct ControlStruct) : RW_Status/
+/+ DoRender(ControlStruct ConstrolStruct) : RW_Status/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>450</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+RW::DeinitialiseControlStruct
+--
+/~ DeinitialiseControlStruct()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>522</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+RW::ControlStruct
+--
+/~ ControlStruct()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>378</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+RW::InitialiseControlStruct
+--
+/~ InitialiseControlStruct()/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>153</y>
+      <w>387</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>/RW::AbstractModuleFactory/
+--
+
+--
+/+ AbstractModuleFactory()/
+/+ ~AbstractModuleFactory()/
+/+ GetModule(tenSubModule) : RW_Status/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>720</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+RW::SubModuleType
+--
+nenVideoGrabber_WC
+nenVideoGrabber_FG_USB
+nenVideoGrabber_FG_PCI
+nenVideoGrabber_SIMU
+nenGraphic
+nenEncode
+nenStream
+nenRecord
+nenDecode
+nenReceive
+nenCore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>540</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+RW::ModuleType
+--
+nenVideoGrabber
+nenGraphic
+nenEncode
+nenStream
+nenRecord
+nenDecode
+nenReceive
+nenCore</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
