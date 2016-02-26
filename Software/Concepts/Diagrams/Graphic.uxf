@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>15</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>15</y>
+      <w>435</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>RW::GC::ImageMerge
+--
+- m_FrameBuffer : QList&lt;Mat&gt;
+--
+- CopyFrameInGpuMat() : RW_Status
+- StoreSectionInMergedFrame(): RW_Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>0</x>
+      <y>525</y>
+      <w>1305</w>
+      <h>1005</h>
+    </coordinates>
+    <panel_attributes>
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>300</x>
+      <y>615</y>
+      <w>225</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>copy frame to GpuMat</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>255</x>
+      <y>720</y>
+      <w>315</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>create a new GpuMat with the 
+relevant hight, width and depth</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>660</y>
+      <w>45</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>255</x>
+      <y>825</y>
+      <w>315</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>create GpuMat with the mask 
+of the revant region, this 
+is simular to get a "pointer" 
+to this region</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>765</y>
+      <w>45</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>255</x>
+      <y>975</y>
+      <w>300</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Copy the relevant 
+picture data to the 
+region created before</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>915</y>
+      <w>45</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>390</x>
+      <y>540</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>555</y>
+      <w>45</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>1065</y>
+      <w>45</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>615</x>
+      <y>720</y>
+      <w>600</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>GpuMat mergedFrame = GpuMat(Size(4096,2160),CV_8U3)
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>615</x>
+      <y>600</y>
+      <w>435</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>GpuMat pic1 = GpuMat(Size(x,y),CV_8U3)
+pic1.put(0,0,au8Data);
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>615</x>
+      <y>825</y>
+      <w>675</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>GpuMat rio = GpuMat(mergedFrame,Rect(PosX,PosY,Width,Height))
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>615</x>
+      <y>975</y>
+      <w>195</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>pic1.copyTo(rio)
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>15</y>
+      <w>870</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+RW::tstInitialiseControlStruct_ImageMerge
+--
++ tstInitialiseControlStruct_ImageMerge
+/+ ~ tstInitialiseControlStruct_ImageMerge()/
+--
++ PosX_Pic1 : quint16
++ PosY_Pic1 : quint16
++ Width_Pic1 : quint16
++ Height_Pic1 : quint16
++ PosX_Pic2 : quint16
++ PosY_Pic2 : quint16
++ Width_Pic2 : quint16
++ Height_Pic2 : quint16
++ WidthMergedFrame : quint16
++ HeightMergedFrame : quint16
++ StoreResultInGPUMemory : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2415</x>
+      <y>0</y>
+      <w>870</w>
+      <h>375</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+RW::tstInitialiseControlStruct_ImageSplit
+--
++ tstInitialiseControlStruct_ImageSplit
+/+ ~ tstInitialiseControlStruct_ImageSplit()/
+--
++ PosX_Pic1 : quint16
++ PosY_Pic1 : quint16
++ Width_Pic1 : quint16
++ Height_Pic1 : quint16
++ PosX_Pic2 : quint16
++ PosY_Pic2 : quint16
++ Width_Pic2 : quint16
++ Height_Pic2 : quint16
++ StoreResultInGPUMemory : bool
++ UseGPU : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2580</x>
+      <y>450</y>
+      <w>435</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>RW::GC::ImageMerge
+--
+- m_FrameBuffer : QList&lt;Mat&gt;
+--
+- CopyFrameInGpuMat() : RW_Status
+- StoreSectionInMergedFrame(): RW_Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>2385</x>
+      <y>690</y>
+      <w>1020</w>
+      <h>840</h>
+    </coordinates>
+    <panel_attributes>
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2895</x>
+      <y>930</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>create a new GpuMat with a 
+reference on the original 
+image and a roi from the
+relevant segment</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>2775</x>
+      <y>705</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2775</x>
+      <y>720</y>
+      <w>45</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2925</x>
+      <y>1320</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>return the GPU Pointer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2820</x>
+      <y>1215</y>
+      <w>555</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+StoreResultInGPUMemory == true</panel_attributes>
+    <additional_attributes>140.0;70.0;140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2400</x>
+      <y>1320</y>
+      <w>300</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>transfer result to CPU Memory
+and return this pointer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2535</x>
+      <y>1215</y>
+      <w>375</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+StoreResultInGPUMemory == false</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2685</x>
+      <y>1395</y>
+      <w>285</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>The Core module must 
+ensure that the following 
+module has knowlegde 
+about the memory handling
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2805</x>
+      <y>1335</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2685</x>
+      <y>1335</y>
+      <w>165</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2535</x>
+      <y>1365</y>
+      <w>45</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>2535</x>
+      <y>1455</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3015</x>
+      <y>1365</y>
+      <w>45</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>3015</x>
+      <y>1440</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>375</x>
+      <y>1155</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>570</x>
+      <y>1290</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>return the GPU Pointer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>1170</y>
+      <w>600</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+StoreResultInGPUMemory == true</panel_attributes>
+    <additional_attributes>170.0;80.0;170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>15</x>
+      <y>1290</y>
+      <w>300</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>transfer result to CPU Memory
+and return this pointer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>1170</y>
+      <w>375</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+StoreResultInGPUMemory == false</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>300</x>
+      <y>1395</y>
+      <w>285</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>The Core module must 
+ensure that the following 
+module has knowlegde 
+about the memory handling
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>1305</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>1305</y>
+      <w>165</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>1335</y>
+      <w>45</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>150</x>
+      <y>1425</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>1335</y>
+      <w>45</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>660</x>
+      <y>1425</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2430</x>
+      <y>930</y>
+      <w>255</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>create a new Mat with a 
+reference on the original 
+image and a roi from the
+relevant segment</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>2760</x>
+      <y>810</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2550</x>
+      <y>825</y>
+      <w>240</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+UseGPU == false</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2805</x>
+      <y>825</y>
+      <w>405</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+UseGPU == true</panel_attributes>
+    <additional_attributes>150.0;70.0;150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>2775</x>
+      <y>1200</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>2775</x>
+      <y>1080</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2820</x>
+      <y>1035</y>
+      <w>240</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;140.0;50.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2550</x>
+      <y>1035</y>
+      <w>255</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>150.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2790</x>
+      <y>1125</y>
+      <w>45</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

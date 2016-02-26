@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>132</x>
+      <y>187</y>
+      <w>429</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes>RW::CORE:Core
+--
+- m_Settings : XXX
+- m_PluginLoader : PluginLoader
+- m_ClientCommunicator : ClienCommunicator
+- m_FlowGraphContainerList : QList&lt;FlowGraphContainer&gt;
+--
++ Initialise()
+
+--
+- ReadSettings() : RW_Status
+- LoadPlugins() : RW_Status
+- InitialiseCommunicator : RW_Status
+--
+{Slot} StartStreaming() : void
+{Slot} PauseStreaming() : void
+{Slot} ResumeStreaming() : void
+{Slot} StopStreaming() : void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>220</y>
+      <w>341</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>RW::CORE:FlowGraphContainer
+--
+- m_FlowGraph : tbb::flow::graph
+- m_IsRunning : bool
+- m_GraphThread : QThread;
+--
++ FlowGraphContainer(Graph : tbb::flow::graph)
++ ~FlowGraphContainer()
++ IsRunning() : bool
++ CheckBreakCondition() : RW_Status
++ Start() : RW_Status
++ Stop() : RW_Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>968</x>
+      <y>319</y>
+      <w>308</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Checks if the internal condition is grant
+e.g after 200 Frames the graph should stop
+bg=yellow
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>319</y>
+      <w>110</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;30.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1287</x>
+      <y>209</y>
+      <w>649</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>RW::CORE::ModuleConnector
+--
++ BuildGraph(Configuration : ConfigurationContainer, Graph : tbb::flow::graph*) : RW_Status
++ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>968</x>
+      <y>275</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>delete the graph
+bg=yellow
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>286</y>
+      <w>198</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;30.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>0</x>
+      <y>550</y>
+      <w>561</w>
+      <h>671</h>
+    </coordinates>
+    <panel_attributes>StartStreaming
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>11</x>
+      <y>748</y>
+      <w>308</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Call ModuleConnctor::BuildGraph()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>154</x>
+      <y>605</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>616</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>11</x>
+      <y>858</y>
+      <w>308</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Create FlowGraphContainer and set the 
+graph created before as Parameter</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>143</x>
+      <y>671</y>
+      <w>44</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>704</y>
+      <w>33</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>803</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>143</x>
+      <y>968</y>
+      <w>44</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>682</y>
+      <w>385</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+more graph element available</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0;150.0;280.0;10.0;280.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>913</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>682</x>
+      <y>550</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:Instance_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>726</x>
+      <y>572</y>
+      <w>33</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1232</x>
+      <y>1012</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>880</x>
+      <y>946</y>
+      <w>242</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>QCommunicatorThread</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1232</x>
+      <y>847</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1551</x>
+      <y>880</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1397</x>
+      <y>880</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1243</x>
+      <y>880</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1243</x>
+      <y>1045</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1397</x>
+      <y>1045</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1551</x>
+      <y>1045</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>1012</y>
+      <w>462</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;400.0;140.0;400.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>803</y>
+      <w>462</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0;400.0;10.0;400.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1111</x>
+      <y>913</y>
+      <w>396</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>340.0;10.0;340.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1111</x>
+      <y>990</y>
+      <w>396</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>340.0;50.0;340.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1342</x>
+      <y>891</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1496</x>
+      <y>891</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1342</x>
+      <y>1056</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1496</x>
+      <y>1056</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1815</x>
+      <y>506</y>
+      <w>418</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>template=T : tenSubModuleType
+FunctionNodeContainer
+--
+- m_FunctionNode : tbb::flow::function_node
+- m_Module : T
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>957</x>
+      <y>451</y>
+      <w>638</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>template=T : tenSubModuleType
+SourceNodeContainer
+--
+- m_InitialiseSourceNode : tbb::flow::source_node&lt;tstInitialiseControlStruct&gt;
+- m_DoRenderSourceNode : tbb::flow::source_node&lt;tstControlStruct&gt;
+- m_DeinitialiseSourceNode : tbb::flow::source_node&lt;tstDeinitialiseControlStruct&gt;
+- m_Module : T
+--
++ getInitSourceNode() : tbb::flow::source_node&lt;tstInitialiseControlStruct&gt;*
++ getDoRenderSourceNode() : ... 
++ getDeinitSourceNode() : ...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2673</x>
+      <y>55</y>
+      <w>1056</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+Initialise
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2783</x>
+      <y>0</y>
+      <w>473</w>
+      <h>451</h>
+    </coordinates>
+    <panel_attributes>halign=center
+IC
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>2805</x>
+      <y>77</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3124</x>
+      <y>110</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2970</x>
+      <y>110</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2816</x>
+      <y>110</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2915</x>
+      <y>121</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3069</x>
+      <y>121</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2673</x>
+      <y>187</y>
+      <w>1056</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+DoRender
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>2805</x>
+      <y>209</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2816</x>
+      <y>242</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2915</x>
+      <y>253</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2970</x>
+      <y>242</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3124</x>
+      <y>242</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3069</x>
+      <y>253</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2673</x>
+      <y>319</y>
+      <w>1056</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+Deinitialise
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>2805</x>
+      <y>341</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2816</x>
+      <y>374</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2915</x>
+      <y>385</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>2970</x>
+      <y>374</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3124</x>
+      <y>374</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3069</x>
+      <y>385</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3256</x>
+      <y>0</y>
+      <w>473</w>
+      <h>451</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Hud
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>3278</x>
+      <y>77</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3597</x>
+      <y>110</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3443</x>
+      <y>110</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3289</x>
+      <y>110</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3388</x>
+      <y>121</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3542</x>
+      <y>121</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>3278</x>
+      <y>209</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3289</x>
+      <y>242</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3388</x>
+      <y>253</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3443</x>
+      <y>242</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3597</x>
+      <y>242</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3542</x>
+      <y>253</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>3278</x>
+      <y>341</y>
+      <w>440</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>FlowGraph-Thread
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3289</x>
+      <y>374</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3388</x>
+      <y>385</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3443</x>
+      <y>374</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>3597</x>
+      <y>374</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>state
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3542</x>
+      <y>385</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSequenceAllInOne</id>
+    <coordinates>
+      <x>66</x>
+      <y>1408</y>
+      <w>1540</w>
+      <h>407</h>
+    </coordinates>
+    <panel_attributes>title=New all in one sequence diagram
+obj=Lifeline A~a
+obj=Lifeline B~b 
+obj=Lifeline C~c 
+obj=Lifeline D~d 
+
+on=a; on=b
+a-&gt;a+ : NewConnection; 
+on=a;
+a-&gt;b : {slot} StartStreaming();
+b-&gt;c : StartGraph(); on=c;
+b-&gt;d : StartGraph(); on=d;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

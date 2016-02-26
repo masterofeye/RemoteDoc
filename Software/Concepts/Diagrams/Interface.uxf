@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.1.1">
-  <zoom_level>9</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
-      <y>63</y>
-      <w>225</w>
-      <h>54</h>
+      <x>0</x>
+      <y>8</y>
+      <w>200</w>
+      <h>48</h>
     </coordinates>
-    <panel_attributes>RW::QtPluginInterfaceDefinition
+    <panel_attributes>RW::PluginInterface
 --
-getModuleFactory() : AbstractFactory
+getFactory() : AbstractFactory
 --
 </panel_attributes>
     <additional_attributes/>
@@ -19,10 +19,10 @@ getModuleFactory() : AbstractFactory
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>369</y>
-      <w>387</w>
-      <h>117</h>
+      <x>328</x>
+      <y>0</y>
+      <w>344</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>/RW::VG::VideoGrabberFactory/
 --
@@ -30,77 +30,88 @@ getModuleFactory() : AbstractFactory
 --
 + VideoGrabberFactory()
 + ~VideoGrabberFactory()
-+ GetModule(tenSubModule) : RW_Status</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
-      <y>153</y>
-      <w>387</w>
-      <h>135</h>
+      <x>1336</x>
+      <y>488</y>
+      <w>424</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>/RW::AbstractModule/
 --
-
+- m_ModuleVerion : tstVersion
+- m_IsGPUModule : bool
 --
 + AbstractModule()
 + ~AbstractModule()
-/+ Initialise(InitialiseControlStruct ControlStruct) : RW_Status/
-/+ Deinitialise(DeinitialiseControlStruct ControlStruct) : RW_Status/
-/+ DoRender(ControlStruct ConstrolStruct) : RW_Status/</panel_attributes>
++ GetModuleVersion() : tstVersion
++ IsGPUModule : bool
+/+ Initialise(ControlStruct :  InitialiseControlStruct* = NULL {query}) : RW_Status/
+/+ Deinitialise(ControlStruct : DeinitialiseControlStruct* = NULL {query}) : RW_Status/
+/+ PreRender(ConstrolStruct : PreRenderControlStruct* = NULL) : RW_Status/
+/+ DoRender(ControlStruct : ConstrolStruct*  = NULL) : RW_Status/
+/+ PostRender(ConstrolStruct : PostRenderControlStruct* = NULL) : RW_Status/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
-      <y>450</y>
-      <w>171</w>
-      <h>63</h>
+      <x>200</x>
+      <y>576</y>
+      <w>424</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
-RW::DeinitialiseControlStruct
+RW::tstDeinitialiseControlStruct
 --
-/~ DeinitialiseControlStruct()/</panel_attributes>
++ tstDeinitialiseControlStruct
+/+ ~ tstDeinitialiseControlStruct()/
+/+ InitialiseStruct( Configuration Map&lt;enConfigurationKey,QVariant&gt;*) : RW_Status/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
-      <y>522</y>
-      <w>171</w>
-      <h>63</h>
+      <x>200</x>
+      <y>672</y>
+      <w>424</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
-RW::ControlStruct
+RW::tstControlStruct
 --
-/~ ControlStruct()/</panel_attributes>
++ tstControlStruct
+/+ ~ tstControlStruct()/
+/+ InitialiseStruct( Configuration Map&lt;enConfigurationKey,QVariant&gt;*) : RW_Status/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>27</x>
-      <y>378</y>
-      <w>171</w>
-      <h>63</h>
+      <x>200</x>
+      <y>464</y>
+      <w>424</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
-RW::InitialiseControlStruct
+RW::tstInitialiseControlStruct
 --
-/~ InitialiseControlStruct()/</panel_attributes>
++ tstInitialiseControlStruct
+/+ ~ tstInitialiseControlStruct()/
+/+ InitialiseStruct( Configuration Map&lt;enConfigurationKey,QVariant&gt;*) : RW_Status/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>153</y>
-      <w>387</w>
-      <h>135</h>
+      <x>968</x>
+      <y>0</y>
+      <w>344</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>/RW::AbstractModuleFactory/
 --
@@ -108,43 +119,46 @@ RW::InitialiseControlStruct
 --
 /+ AbstractModuleFactory()/
 /+ ~AbstractModuleFactory()/
-/+ GetModule(tenSubModule) : RW_Status/</panel_attributes>
+/+ GetModule(tenSubModule) : RW_Status/
+/+ GetModuleType() : RW_tenModule/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>720</y>
-      <w>189</w>
-      <h>198</h>
+      <x>200</x>
+      <y>840</y>
+      <w>168</w>
+      <h>208</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
-RW::SubModuleType
+RW::tenSubModuleType
 --
 nenVideoGrabber_WC
 nenVideoGrabber_FG_USB
 nenVideoGrabber_FG_PCI
 nenVideoGrabber_SIMU
-nenGraphic
-nenEncode
-nenStream
-nenRecord
-nenDecode
-nenReceive
-nenCore</panel_attributes>
+nenGraphic_Color
+nenEncode_NVIDIA
+nenEncode_INTEL
+nenDecoder_NVIDIA
+nenDecoder_INTEL
+nenStream_Simple
+nenStream_Productive
+nenReceive_Simple
+nenReceive_Productive</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>540</y>
-      <w>189</w>
-      <h>162</h>
+      <x>528</x>
+      <y>984</y>
+      <w>168</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
-RW::ModuleType
+RW::tenModuleType
 --
 nenVideoGrabber
 nenGraphic
@@ -154,6 +168,179 @@ nenRecord
 nenDecode
 nenReceive
 nenCore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1336</x>
+      <y>376</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+RW::tstVersion
+--
++ Major : quint8
++ Minor : quint8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>872</x>
+      <y>488</y>
+      <w>344</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>/RW::AbstractModuleFactory/
+--
+
+--
+/+ AbstractModuleFactory()/
+/+ ~AbstractModuleFactory()/
+/+ GetModule(tenSubModule) : AbstractModule/
+/+ GetModuleType() : RW_tenModule/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>392</y>
+      <w>200</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>RW::PluginInterface
+--
+getFactory() : AbstractFactory
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>872</x>
+      <y>704</y>
+      <w>344</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>/RW::VG::VideoGrabberFactory/
+--
+
+--
++ VideoGrabberFactory()
++ ~VideoGrabberFactory()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>576</y>
+      <w>24</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1336</x>
+      <y>704</y>
+      <w>424</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>RW::VG::VidoerGrabber_Simu
+--
+- m_frameBuffer : QList&lt;QByteArray*&gt;
+- m_Timer : QTimer
+--
+- ReadFrames() : RW_Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1536</x>
+      <y>648</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>816</x>
+      <y>360</y>
+      <w>976</w>
+      <h>448</h>
+    </coordinates>
+    <panel_attributes>
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1208</x>
+      <y>736</y>
+      <w>144</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>432</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1416</x>
+      <y>448</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>192</y>
+      <w>424</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>/RW::AbstractModule/
+--
+- m_ModuleVerion : tstVersion
+- m_IsGPUModule : bool
+--
++ AbstractModule()
++ ~AbstractModule()
++ GetModuleVersion() : tstVersion
++ IsGPUModule : bool
+/+ Initialise(ControlStruct :  InitialiseControlStruct* = NULL {query}) : RW_Status/
+/+ Deinitialise(ControlStruct : DeinitialiseControlStruct* = NULL {query}) : RW_Status/
+/+ PreRender(ConstrolStruct : PreRenderControlStruct* = NULL) : RW_Status/
+/+ DoRender(ControlStruct : ConstrolStruct*  = NULL) : RW_Status/
+/+ PostRender(ConstrolStruct : PostRenderControlStruct* = NULL) : RW_Status/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
