@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.1.1">
-  <zoom_level>7</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>231</x>
-      <y>175</y>
-      <w>189</w>
-      <h>119</h>
+      <x>420</x>
+      <y>0</y>
+      <w>270</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>RW::VG::VideoGrabber_Simu
 --
@@ -21,10 +21,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>511</y>
-      <w>371</w>
-      <h>70</h>
+      <x>430</x>
+      <y>480</y>
+      <w>530</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
 RW::VG::tstDeinitialiseControlStruct_Virtual
@@ -37,10 +37,10 @@ RW::VG::tstDeinitialiseControlStruct_Virtual
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>630</y>
-      <w>371</w>
-      <h>70</h>
+      <x>430</x>
+      <y>650</y>
+      <w>530</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
 RW::VG::tstControlStruct_Virtual
@@ -53,10 +53,10 @@ RW::VG::tstControlStruct_Virtual
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>350</y>
-      <w>371</w>
-      <h>147</h>
+      <x>430</x>
+      <y>250</y>
+      <w>530</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>&lt;&lt;struct&gt;&gt;
 RW::VG::tstInitialiseControlStruct_Virtual

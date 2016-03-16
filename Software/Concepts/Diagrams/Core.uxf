@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.1.1">
-  <zoom_level>11</zoom_level>
+  <zoom_level>3</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>132</x>
-      <y>187</y>
-      <w>429</w>
-      <h>286</h>
+      <x>729</x>
+      <y>225</y>
+      <w>117</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>RW::CORE:Core
 --
@@ -17,25 +17,24 @@
 - m_FlowGraphContainerList : QList&lt;FlowGraphContainer&gt;
 --
 + Initialise()
-
 --
 - ReadSettings() : RW_Status
 - LoadPlugins() : RW_Status
 - InitialiseCommunicator : RW_Status
 --
-{Slot} StartStreaming() : void
-{Slot} PauseStreaming() : void
-{Slot} ResumeStreaming() : void
-{Slot} StopStreaming() : void </panel_attributes>
++ StartStreaming() : void {Slot} 
++ PauseStreaming() : void {Slot} 
++ ResumeStreaming() : void {Slot} 
++ StopStreaming() : void {Slot} </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
-      <y>220</y>
-      <w>341</w>
-      <h>220</h>
+      <x>861</x>
+      <y>234</y>
+      <w>93</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>RW::CORE:FlowGraphContainer
 --
@@ -54,10 +53,10 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>968</x>
-      <y>319</y>
-      <w>308</w>
-      <h>44</h>
+      <x>957</x>
+      <y>261</y>
+      <w>84</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>Checks if the internal condition is grant
 e.g after 200 Frames the graph should stop
@@ -68,10 +67,10 @@ bg=yellow
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>880</x>
-      <y>319</y>
-      <w>110</w>
-      <h>55</h>
+      <x>933</x>
+      <y>261</y>
+      <w>30</w>
+      <h>15</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -80,10 +79,10 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1287</x>
-      <y>209</y>
-      <w>649</w>
-      <h>121</h>
+      <x>1044</x>
+      <y>231</y>
+      <w>177</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>RW::CORE::ModuleConnector
 --
@@ -94,10 +93,10 @@ bg=yellow
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>968</x>
-      <y>275</y>
-      <w>154</w>
-      <h>33</h>
+      <x>957</x>
+      <y>249</y>
+      <w>42</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>delete the graph
 bg=yellow
@@ -107,10 +106,10 @@ bg=yellow
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>286</y>
-      <w>198</w>
-      <h>55</h>
+      <x>909</x>
+      <y>252</y>
+      <w>54</w>
+      <h>15</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -119,10 +118,10 @@ bg=yellow
   <element>
     <id>UMLObject</id>
     <coordinates>
-      <x>0</x>
-      <y>550</y>
-      <w>561</w>
-      <h>671</h>
+      <x>693</x>
+      <y>324</y>
+      <w>153</w>
+      <h>183</h>
     </coordinates>
     <panel_attributes>StartStreaming
 valign=top</panel_attributes>
@@ -131,10 +130,10 @@ valign=top</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>11</x>
-      <y>748</y>
-      <w>308</w>
-      <h>66</h>
+      <x>696</x>
+      <y>378</y>
+      <w>84</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>Call ModuleConnctor::BuildGraph()</panel_attributes>
     <additional_attributes/>
@@ -142,10 +141,10 @@ valign=top</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>154</x>
-      <y>605</y>
-      <w>22</w>
-      <h>22</h>
+      <x>735</x>
+      <y>339</y>
+      <w>6</w>
+      <h>6</h>
     </coordinates>
     <panel_attributes>type=initial</panel_attributes>
     <additional_attributes/>
@@ -153,10 +152,10 @@ valign=top</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>154</x>
-      <y>616</y>
-      <w>33</w>
-      <h>77</h>
+      <x>735</x>
+      <y>342</y>
+      <w>9</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
@@ -164,10 +163,10 @@ valign=top</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>11</x>
-      <y>858</y>
-      <w>308</w>
-      <h>66</h>
+      <x>696</x>
+      <y>408</y>
+      <w>84</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>Create FlowGraphContainer and set the 
 graph created before as Parameter</panel_attributes>
@@ -176,10 +175,10 @@ graph created before as Parameter</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>143</x>
-      <y>671</y>
-      <w>44</w>
-      <h>44</h>
+      <x>732</x>
+      <y>357</y>
+      <w>12</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>type=decision</panel_attributes>
     <additional_attributes/>
@@ -187,10 +186,10 @@ graph created before as Parameter</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>154</x>
-      <y>704</y>
-      <w>33</w>
-      <h>66</h>
+      <x>735</x>
+      <y>366</y>
+      <w>9</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
@@ -198,10 +197,10 @@ graph created before as Parameter</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>154</x>
-      <y>803</y>
-      <w>33</w>
-      <h>77</h>
+      <x>735</x>
+      <y>393</y>
+      <w>9</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
@@ -209,10 +208,10 @@ graph created before as Parameter</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>143</x>
-      <y>968</y>
-      <w>44</w>
-      <h>44</h>
+      <x>732</x>
+      <y>438</y>
+      <w>12</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>type=decision</panel_attributes>
     <additional_attributes/>
@@ -220,10 +219,10 @@ graph created before as Parameter</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>176</x>
-      <y>682</y>
-      <w>385</w>
-      <h>330</h>
+      <x>741</x>
+      <y>360</y>
+      <w>105</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 more graph element available</panel_attributes>
@@ -232,43 +231,21 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>154</x>
-      <y>913</y>
-      <w>33</w>
-      <h>77</h>
+      <x>735</x>
+      <y>423</y>
+      <w>9</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>682</x>
-      <y>550</y>
-      <w>110</w>
-      <h>33</h>
-    </coordinates>
-    <panel_attributes>_:Instance_</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>726</x>
-      <y>572</y>
-      <w>33</w>
-      <h>286</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1232</x>
-      <y>1012</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1029</x>
+      <y>450</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread</panel_attributes>
     <additional_attributes/>
@@ -276,10 +253,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>880</x>
-      <y>946</y>
-      <w>242</w>
-      <h>77</h>
+      <x>933</x>
+      <y>432</y>
+      <w>66</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>QCommunicatorThread</panel_attributes>
     <additional_attributes/>
@@ -287,10 +264,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1232</x>
-      <y>847</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1029</x>
+      <y>405</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread</panel_attributes>
     <additional_attributes/>
@@ -298,10 +275,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1551</x>
-      <y>880</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1116</x>
+      <y>414</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state</panel_attributes>
     <additional_attributes/>
@@ -309,10 +286,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1397</x>
-      <y>880</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1074</x>
+      <y>414</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state</panel_attributes>
     <additional_attributes/>
@@ -320,10 +297,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1243</x>
-      <y>880</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1032</x>
+      <y>414</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state</panel_attributes>
     <additional_attributes/>
@@ -331,10 +308,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1243</x>
-      <y>1045</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1032</x>
+      <y>459</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state</panel_attributes>
     <additional_attributes/>
@@ -342,10 +319,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1397</x>
-      <y>1045</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1074</x>
+      <y>459</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state</panel_attributes>
     <additional_attributes/>
@@ -353,10 +330,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1551</x>
-      <y>1045</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1116</x>
+      <y>459</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state</panel_attributes>
     <additional_attributes/>
@@ -364,10 +341,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
-      <y>1012</y>
-      <w>462</w>
-      <h>176</h>
+      <x>963</x>
+      <y>450</y>
+      <w>126</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0;400.0;140.0;400.0;70.0</additional_attributes>
@@ -375,10 +352,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
-      <y>803</y>
-      <w>462</w>
-      <h>165</h>
+      <x>963</x>
+      <y>393</y>
+      <w>126</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;130.0;10.0;10.0;400.0;10.0;400.0;70.0</additional_attributes>
@@ -386,10 +363,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1111</x>
-      <y>913</y>
-      <w>396</w>
-      <h>88</h>
+      <x>996</x>
+      <y>423</y>
+      <w>108</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>340.0;10.0;340.0;60.0;10.0;60.0</additional_attributes>
@@ -397,10 +374,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1111</x>
-      <y>990</y>
-      <w>396</w>
-      <h>77</h>
+      <x>996</x>
+      <y>444</y>
+      <w>108</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>340.0;50.0;340.0;10.0;10.0;10.0</additional_attributes>
@@ -408,10 +385,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1342</x>
-      <y>891</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1059</x>
+      <y>417</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -419,10 +396,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1496</x>
-      <y>891</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1101</x>
+      <y>417</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -430,10 +407,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1342</x>
-      <y>1056</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1059</x>
+      <y>462</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -441,10 +418,10 @@ more graph element available</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1496</x>
-      <y>1056</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1101</x>
+      <y>462</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -452,10 +429,10 @@ more graph element available</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1815</x>
-      <y>506</y>
-      <w>418</w>
-      <h>99</h>
+      <x>1188</x>
+      <y>312</y>
+      <w>114</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>template=T : tenSubModuleType
 FunctionNodeContainer
@@ -468,31 +445,10 @@ FunctionNodeContainer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>957</x>
-      <y>451</y>
-      <w>638</w>
-      <h>198</h>
-    </coordinates>
-    <panel_attributes>template=T : tenSubModuleType
-SourceNodeContainer
---
-- m_InitialiseSourceNode : tbb::flow::source_node&lt;tstInitialiseControlStruct&gt;
-- m_DoRenderSourceNode : tbb::flow::source_node&lt;tstControlStruct&gt;
-- m_DeinitialiseSourceNode : tbb::flow::source_node&lt;tstDeinitialiseControlStruct&gt;
-- m_Module : T
---
-+ getInitSourceNode() : tbb::flow::source_node&lt;tstInitialiseControlStruct&gt;*
-+ getDoRenderSourceNode() : ... 
-+ getDeinitSourceNode() : ...</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>2673</x>
-      <y>55</y>
-      <w>1056</w>
-      <h>132</h>
+      <x>1422</x>
+      <y>189</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -504,10 +460,10 @@ Initialise
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2783</x>
-      <y>0</y>
-      <w>473</w>
-      <h>451</h>
+      <x>1452</x>
+      <y>174</y>
+      <w>129</w>
+      <h>123</h>
     </coordinates>
     <panel_attributes>halign=center
 IC
@@ -519,10 +475,10 @@ IC
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>2805</x>
-      <y>77</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1458</x>
+      <y>195</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread
 layer=1</panel_attributes>
@@ -531,10 +487,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3124</x>
-      <y>110</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1545</x>
+      <y>204</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -543,10 +499,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>2970</x>
-      <y>110</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1503</x>
+      <y>204</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -555,10 +511,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>2816</x>
-      <y>110</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1461</x>
+      <y>204</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -567,10 +523,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2915</x>
-      <y>121</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1488</x>
+      <y>207</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -578,10 +534,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3069</x>
-      <y>121</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1530</x>
+      <y>207</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -589,10 +545,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2673</x>
-      <y>187</y>
-      <w>1056</w>
-      <h>132</h>
+      <x>1422</x>
+      <y>225</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -603,10 +559,10 @@ DoRender
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>2805</x>
-      <y>209</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1458</x>
+      <y>231</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread
 layer=1</panel_attributes>
@@ -615,10 +571,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>2816</x>
-      <y>242</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1461</x>
+      <y>240</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -627,10 +583,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2915</x>
-      <y>253</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1488</x>
+      <y>243</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -638,10 +594,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>2970</x>
-      <y>242</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1503</x>
+      <y>240</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -650,10 +606,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3124</x>
-      <y>242</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1545</x>
+      <y>240</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -662,10 +618,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3069</x>
-      <y>253</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1530</x>
+      <y>243</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -673,10 +629,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2673</x>
-      <y>319</y>
-      <w>1056</w>
-      <h>132</h>
+      <x>1422</x>
+      <y>261</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=left
@@ -687,10 +643,10 @@ Deinitialise
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>2805</x>
-      <y>341</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1458</x>
+      <y>267</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread
 layer=1</panel_attributes>
@@ -699,10 +655,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>2816</x>
-      <y>374</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1461</x>
+      <y>276</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -711,10 +667,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2915</x>
-      <y>385</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1488</x>
+      <y>279</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -722,10 +678,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>2970</x>
-      <y>374</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1503</x>
+      <y>276</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -734,10 +690,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3124</x>
-      <y>374</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1545</x>
+      <y>276</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -746,10 +702,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3069</x>
-      <y>385</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1530</x>
+      <y>279</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -757,10 +713,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3256</x>
-      <y>0</y>
-      <w>473</w>
-      <h>451</h>
+      <x>1581</x>
+      <y>174</y>
+      <w>129</w>
+      <h>123</h>
     </coordinates>
     <panel_attributes>halign=center
 Hud
@@ -772,10 +728,10 @@ Hud
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>3278</x>
-      <y>77</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1587</x>
+      <y>195</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread
 layer=1</panel_attributes>
@@ -784,10 +740,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3597</x>
-      <y>110</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1674</x>
+      <y>204</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -796,10 +752,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3443</x>
-      <y>110</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1632</x>
+      <y>204</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -808,10 +764,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3289</x>
-      <y>110</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1590</x>
+      <y>204</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -820,10 +776,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3388</x>
-      <y>121</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1617</x>
+      <y>207</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -831,10 +787,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3542</x>
-      <y>121</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1659</x>
+      <y>207</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -842,10 +798,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>3278</x>
-      <y>209</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1587</x>
+      <y>231</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread
 layer=1</panel_attributes>
@@ -854,10 +810,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3289</x>
-      <y>242</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1590</x>
+      <y>240</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -866,10 +822,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3388</x>
-      <y>253</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1617</x>
+      <y>243</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -877,10 +833,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3443</x>
-      <y>242</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1632</x>
+      <y>240</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -889,10 +845,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3597</x>
-      <y>242</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1674</x>
+      <y>240</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -901,10 +857,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3542</x>
-      <y>253</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1659</x>
+      <y>243</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -912,10 +868,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>3278</x>
-      <y>341</y>
-      <w>440</w>
-      <h>88</h>
+      <x>1587</x>
+      <y>267</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FlowGraph-Thread
 layer=1</panel_attributes>
@@ -924,10 +880,10 @@ layer=1</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3289</x>
-      <y>374</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1590</x>
+      <y>276</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -936,10 +892,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3388</x>
-      <y>385</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1617</x>
+      <y>279</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -947,10 +903,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3443</x>
-      <y>374</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1632</x>
+      <y>276</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -959,10 +915,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>3597</x>
-      <y>374</y>
-      <w>110</w>
-      <h>44</h>
+      <x>1674</x>
+      <y>276</y>
+      <w>30</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>state
 layer=2</panel_attributes>
@@ -971,10 +927,10 @@ layer=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3542</x>
-      <y>385</y>
-      <w>77</w>
-      <h>33</h>
+      <x>1659</x>
+      <y>279</y>
+      <w>21</w>
+      <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
@@ -982,10 +938,10 @@ layer=2</panel_attributes>
   <element>
     <id>UMLSequenceAllInOne</id>
     <coordinates>
-      <x>66</x>
-      <y>1408</y>
-      <w>1540</w>
-      <h>407</h>
+      <x>294</x>
+      <y>189</y>
+      <w>420</w>
+      <h>111</h>
     </coordinates>
     <panel_attributes>title=New all in one sequence diagram
 obj=Lifeline A~a
@@ -1001,5 +957,347 @@ b-&gt;c : StartGraph(); on=c;
 b-&gt;d : StartGraph(); on=d;
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>972</x>
+      <y>597</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>SourceNodeContainer
+--
+- m_InitialiseSourceNode : tbb::flow::source_node&lt;Mat&gt;
+- m_DoRenderSourceNode : tbb::flow::source_node&lt;Mat&gt;
+- m_DeinitialiseSourceNode : tbb::flow::source_node&lt;Mat&gt;
+- m_Module : AbstractModule*
+--
++ SourceNodeContainer(Container : AbstractModule&amp;)
++ SourceNodeContainer(SourceNodeContainer : const SourceNodeContainer&amp;)
++ ~SourceNodeContainer()
++ GetInitialiseSourceNode() : tbb::flow::source_node&lt;Mat,Mat&gt; SourceNode const *  
++ GetDoRenderSourceNode() : tbb::flow::source_node&lt;Mat,Mat&gt; SourceNode const *  
++ GetDeinitialiseSourceNode() : tbb::flow::source_node&lt;Mat,Mat&gt; SourceNode const *</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1017</x>
+      <y>552</y>
+      <w>93</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>SourceNodeContainerQt
+--
++ ActivateInitialiseSourceNode() : void &lt;&lt;slot&gt;&gt;
++ ActivateDoRenderSourceNode() : void &lt;&lt;slot&gt;&gt;
++ ActivateDeinitialiseSourceNode() : void &lt;&lt;slot&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1059</x>
+      <y>576</y>
+      <w>9</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>615</y>
+      <w>99</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SourceNodeDoRender
+--
++ SourceNodeDoRender(Module : AbstractModule*)
++ ~SourceNodeDoRender()
++ operator() (m Mat&amp;) : bool
++ finish() : void &lt;&lt;signal&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>582</y>
+      <w>99</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SourceNodeInitialise
+--
++ SourceNodeInitialise(Module : AbstractModule*)
++ ~SourceNodeInitialise()
++ operator() (m Mat&amp;) : bool
++ finish() : void &lt;&lt;signal&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>648</y>
+      <w>99</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SourceNodeDeinitialise
+--
++ SourceNodeDeinitialise(Module : AbstractModule*)
++ ~SourceNodeDeinitialise()
++ operator() (m Mat&amp;) : bool
++ finish() : void &lt;&lt;signal&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>585</y>
+      <w>108</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;340.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>615</y>
+      <w>108</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>621</y>
+      <w>108</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;110.0;340.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>543</x>
+      <y>606</y>
+      <w>165</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/RW::CORE::AbstractSourceNode/
+--
+- m_Module : AbstractModule
+--
++ AbstractSourceNode(Module : AbstractModule*)
++ ~AbstractunctionSourceNode()
+/+ operator() (m Mat&amp;) : bool/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>705</x>
+      <y>585</y>
+      <w>75</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>705</x>
+      <y>618</y>
+      <w>75</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>705</x>
+      <y>627</y>
+      <w>75</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>972</x>
+      <y>732</y>
+      <w>174</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>FunctionNodeContainer
+--
+- m_InitialiseSourceNode : tbb::flow::function_node&lt;Mat,Mat&gt;
+- m_DoRenderSourceNode : tbb::flow::function_node&lt;Mat.Mat&gt;
+- m_DeinitialiseSourceNode : tbb::flow::function_node&lt;Mat,Mat&gt;
+- m_Module : AbstractModule*
+--
++ FunctionNodeContainer(Container : AbstractModule&amp;)
++ FunctionNodeContainer(SourceNodeContainer : const FunctionNodeContainer&amp;)
++ ~FunctionNodeContainer()
++ GetInitialiseFunctionNode() : tbb::flow::function_node&lt;Mat,Mat&gt; FunctionNode const *  
++ GetDoRenderFunctionNode() : tbb::flow::function_node&lt;Mat,Mat&gt; FunctionNode const *  
++ GetDeinitialiseFunctionNode() : tbb::flow::function_node&lt;Mat,Mat&gt; FunctionNode const *  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>747</y>
+      <w>102</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FunctionNodeDoRender
+--
++ FunctionNodeDoRender(Module: AbstractModule*)
++ ~FunctionNodeDoRender()
++ operator() (const m : Mat&amp;) : Mat
++ finish() : void &lt;&lt;signal&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>714</y>
+      <w>102</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FunctionNodeInitialise
+--
++ FunctionNodeInitialise(Module : AbstractModule*)
++ ~FunctionNodeInitialise()
++ operator() (const m : Mat&amp;) : Mat
++ finish() : void &lt;&lt;signal&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>780</y>
+      <w>102</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FunctionNodeDeinitialise
+--
++ FunctionNodeDeinitialise(Module: AbstractModule*)
++ ~FunctionNodeDeinitialise()
++ operator() (const m : Mat&amp;) : Mat
++ finish() : void &lt;&lt;signal&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>879</x>
+      <y>717</y>
+      <w>99</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>879</x>
+      <y>750</y>
+      <w>99</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>879</x>
+      <y>756</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;100.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>738</y>
+      <w>165</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/RW::CORE::AbstractFunctionNode/
+--
+- m_Module : AbstractModule
+--
++ AbstractFunctionNode(Module : AbstractModule*)
++ ~AbstractunctionFunctionNode()
+/+ operator() (const m : Mat&amp;) : Mat/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>717</y>
+      <w>75</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>750</y>
+      <w>75</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>759</y>
+      <w>75</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;90.0</additional_attributes>
   </element>
 </diagram>
