@@ -1,0 +1,5 @@
+- Rechner neustarten 
+- UEFI Boot Manager aktivieren "F2" während Boot drücken
+- Advanced Options aktivieren 
+- Unter System Agent(SA) Configuration
+- VT-d aktivieren
