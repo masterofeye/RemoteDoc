@@ -1,0 +1,11 @@
+Output: Simple BOM
+Type  : SimpleBOM
+From  : Variant [[No Variations]] of Project [Schaltbox RemotePC-Renault.PrjPCB]
+   Generated File[Schaltbox RemotePC-Renault.BOM]
+   Generated File[Schaltbox RemotePC-Renault.CSV]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 10:24:39 On 10.10.2014

@@ -1,0 +1,135 @@
+Removed Pin From Net: NetName=GND Pin=IC7-2
+Removed Pin From Net: NetName=NetIC2_2 Pin=R2-1
+Removed Pin From Net: NetName=NetIC3_2 Pin=R3-1
+Removed Pin From Net: NetName=GND Pin=X1-29
+Removed Pin From Net: NetName=GND Pin=X17-B1
+Removed Pin From Net: NetName=GND Pin=X17-B2
+Removed Pin From Net: NetName=GND Pin=X17-GND
+Removed Pin From Net: NetName=GND Pin=X18-4
+Change Component Comment : Designator=R1 Old Comment=100R New Comment=330R
+Change Component Comment : Designator=R2 Old Comment=100R New Comment=330R
+Change Component Comment : Designator=R3 Old Comment=100R New Comment=330R
+Added Component: Designator=IC8(SO-4)
+Added Component: Designator=IC9(SO-4)
+Added Component: Designator=IC10(SO-4)
+Added Component: Designator=IC11(SO-4)
+Added Component: Designator=IC12(SO-4)
+Added Component: Designator=IC13(SO-4)
+Added Component: Designator=IC14(SO-4)
+Added Component: Designator=IC15(SO-4)
+Added Component: Designator=IC16(SO-4)
+Added Component: Designator=IC17(SO-4)
+Added Component: Designator=IC18(SO-4)
+Added Component: Designator=R5(R0603MD)
+Added Component: Designator=R6(R0603MD)
+Added Component: Designator=R7(R0603MD)
+Added Component: Designator=R9(R0603MD)
+Added Component: Designator=R11(R0603MD)
+Added Component: Designator=R13(R0603MD)
+Added Component: Designator=R14(R0603MD)
+Added Component: Designator=REL19(DIP14 - HE700)
+Added Component: Designator=REL20(DIP14 - HE700)
+Added Component: Designator=REL21(DIP14 - HE700)
+Added Component: Designator=REL22(DIP14 - HE700)
+Added Component: Designator=REL23(DIP14 - HE700)
+Added Component: Designator=X19(Buchse_1x3)
+Added Component: Designator=X20(Buchse_1x3)
+Added Component: Designator=X21(Buchse_1x3)
+Added Pin To Net: NetName=GND Pin=IC8-3
+Added Pin To Net: NetName=GND Pin=IC9-3
+Added Pin To Net: NetName=NetIC2_2 Pin=IC9-4
+Added Pin To Net: NetName=GND Pin=IC10-3
+Added Pin To Net: NetName=NetIC3_2 Pin=IC10-4
+Added Pin To Net: NetName=GND Pin=IC13-3
+Added Pin To Net: NetName=GND Pin=IC14-3
+Added Pin To Net: NetName=GND Pin=IC15-3
+Added Pin To Net: NetName=V5 Pin=R5-2
+Added Pin To Net: NetName=V5 Pin=R6-2
+Added Pin To Net: NetName=V5 Pin=R7-2
+Added Pin To Net: NetName=V5 Pin=R9-2
+Added Pin To Net: NetName=V5 Pin=R11-2
+Added Pin To Net: NetName=V5 Pin=R13-2
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=NetIC8_1 Pin=IC8-1
+Added Pin To Net: NetName=NetIC8_1 Pin=R1-1
+Added Net: Name=NetIC8_1
+Added Pin To Net: NetName=NetIC9_1 Pin=IC9-1
+Added Pin To Net: NetName=NetIC9_1 Pin=R2-1
+Added Net: Name=NetIC9_1
+Added Pin To Net: NetName=NetIC10_1 Pin=IC10-1
+Added Pin To Net: NetName=NetIC10_1 Pin=R3-1
+Added Net: Name=NetIC10_1
+Added Pin To Net: NetName=NetIC12_1 Pin=IC12-1
+Added Pin To Net: NetName=NetIC12_1 Pin=R6-1
+Added Net: Name=NetIC12_1
+Added Pin To Net: NetName=NetIC13_1 Pin=IC13-1
+Added Pin To Net: NetName=NetIC13_1 Pin=R7-1
+Added Net: Name=NetIC13_1
+Added Pin To Net: NetName=NetIC14_1 Pin=IC14-1
+Added Pin To Net: NetName=NetIC14_1 Pin=R9-1
+Added Net: Name=NetIC14_1
+Added Pin To Net: NetName=NetIC15_1 Pin=IC15-1
+Added Pin To Net: NetName=NetIC15_1 Pin=R13-1
+Added Net: Name=NetIC15_1
+Added Pin To Net: NetName=NetIC16_3 Pin=IC16-3
+Added Pin To Net: NetName=NetIC16_3 Pin=R14-2
+Added Net: Name=NetIC16_3
+Added Pin To Net: NetName=NetREL14_1 Pin=REL14-1
+Added Pin To Net: NetName=NetREL14_1 Pin=X19-1
+Added Net: Name=NetREL14_1
+Added Pin To Net: NetName=NetREL14_7 Pin=REL14-7
+Added Pin To Net: NetName=NetREL14_7 Pin=REL14-8
+Added Pin To Net: NetName=NetREL14_7 Pin=X19-2
+Added Net: Name=NetREL14_7
+Added Pin To Net: NetName=NetREL14_14 Pin=REL14-14
+Added Pin To Net: NetName=NetREL14_14 Pin=X19-3
+Added Net: Name=NetREL14_14
+Added Pin To Net: NetName=NetREL16_1 Pin=REL16-1
+Added Pin To Net: NetName=NetREL16_1 Pin=X20-1
+Added Net: Name=NetREL16_1
+Added Pin To Net: NetName=NetREL16_7 Pin=REL16-7
+Added Pin To Net: NetName=NetREL16_7 Pin=REL16-8
+Added Pin To Net: NetName=NetREL16_7 Pin=X20-2
+Added Net: Name=NetREL16_7
+Added Pin To Net: NetName=NetREL16_14 Pin=REL16-14
+Added Pin To Net: NetName=NetREL16_14 Pin=X20-3
+Added Net: Name=NetREL16_14
+Added Pin To Net: NetName=NetREL18_1 Pin=REL18-1
+Added Pin To Net: NetName=NetREL18_1 Pin=X21-1
+Added Net: Name=NetREL18_1
+Added Pin To Net: NetName=NetREL18_7 Pin=REL18-7
+Added Pin To Net: NetName=NetREL18_7 Pin=REL18-8
+Added Pin To Net: NetName=NetREL18_7 Pin=X21-2
+Added Net: Name=NetREL18_7
+Added Pin To Net: NetName=NetREL18_14 Pin=REL18-14
+Added Pin To Net: NetName=NetREL18_14 Pin=X21-3
+Added Net: Name=NetREL18_14
+Added Pin To Net: NetName=NIVCOD_GND Pin=IC15-2
+Added Net: Name=NIVCOD_GND
+Added Pin To Net: NetName=NIVCOD_RES Pin=IC16-1
+Added Pin To Net: NetName=NIVCOD_RES Pin=R11-1
+Added Net: Name=NIVCOD_RES
+Added Pin To Net: NetName=NIVCOD Pin=IC15-4
+Added Pin To Net: NetName=NIVCOD Pin=IC16-4
+Added Net: Name=NIVCOD
+Added Pin To Net: NetName=NORMCLOSE Pin=IC11-1
+Added Pin To Net: NetName=NORMCLOSE Pin=R5-1
+Added Net: Name=NORMCLOSE
+Added Pin To Net: NetName=NORMOPEN Pin=IC12-2
+Added Net: Name=NORMOPEN
+Added Pin To Net: NetName=PARKING BREAK Pin=IC13-4
+Added Net: Name=PARKING BREAK
+Added Pin To Net: NetName=PCGND Pin=IC7-2
+Added Pin To Net: NetName=PCGND Pin=IC8-2
+Added Pin To Net: NetName=PCGND Pin=IC9-2
+Added Pin To Net: NetName=PCGND Pin=IC10-2
+Added Pin To Net: NetName=PCGND Pin=IC11-2
+Added Pin To Net: NetName=PCGND Pin=IC16-2
+Added Pin To Net: NetName=PCGND Pin=X1-29
+Added Pin To Net: NetName=PCGND Pin=X17-B1
+Added Pin To Net: NetName=PCGND Pin=X17-B2
+Added Pin To Net: NetName=PCGND Pin=X17-GND
+Added Pin To Net: NetName=PCGND Pin=X18-4
+Added Net: Name=PCGND
+Added Pin To Net: NetName=WASHER Pin=IC14-4
+Added Net: Name=WASHER

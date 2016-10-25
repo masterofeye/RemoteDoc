@@ -1,0 +1,1 @@
+Exported pictures or created picture for the document

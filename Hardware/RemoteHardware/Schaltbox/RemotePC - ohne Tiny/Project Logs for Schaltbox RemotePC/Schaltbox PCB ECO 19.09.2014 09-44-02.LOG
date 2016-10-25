@@ -1,0 +1,54 @@
+Added Component: Designator=D1(TO252-3_LD_(DPAK))
+Added Component: Designator=D2(SMC_MD_(DO214AB))
+Added Component: Designator=D3(SMA_LD_(DO214AC))
+Added Component: Designator=IC1(TO252-5_MD_(DPAK))
+Added Component: Designator=IC2(TO252-5_MD_(DPAK))
+Added Component: Designator=IC3(TO252-5_MD_(DPAK))
+Added Component: Designator=L1(L_B82464-G4)
+Added Component: Designator=T1(SOT23_L)
+Added Component: Designator=T2(SOT23_L)
+Added Component: Designator=T3(SOT23_L)
+Added Component: Designator=TP1(TESTPAD-1.2mm)
+Added Component: Designator=X4(4mm-Bu_ liegend-rt)
+Added Component: Designator=X5(4mm-Bu_ liegend-sw)
+Added Pin To Net: NetName=UB+ Pin=C2-P
+Added Pin To Net: NetName=UB+ Pin=D1-4
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=NetC1_1 Pin=D3-1
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=NetIC1_1 Pin=IC1-1
+Added Pin To Net: NetName=NetIC1_2 Pin=IC1-2
+Added Pin To Net: NetName=NetIC1_4 Pin=IC1-4
+Added Pin To Net: NetName=NetIC1_1 Pin=IC1-5
+Added Pin To Net: NetName=UB+ Pin=IC1-T
+Added Pin To Net: NetName=NetIC2_1 Pin=IC2-1
+Added Pin To Net: NetName=NetIC2_2 Pin=IC2-2
+Added Pin To Net: NetName=NetIC2_4 Pin=IC2-4
+Added Pin To Net: NetName=NetIC2_1 Pin=IC2-5
+Added Pin To Net: NetName=UB+ Pin=IC2-T
+Added Pin To Net: NetName=NetIC3_1 Pin=IC3-1
+Added Pin To Net: NetName=NetIC3_2 Pin=IC3-2
+Added Pin To Net: NetName=NetIC3_4 Pin=IC3-4
+Added Pin To Net: NetName=NetIC3_1 Pin=IC3-5
+Added Pin To Net: NetName=UB+ Pin=IC3-T
+Added Pin To Net: NetName=UB+ Pin=IC4-7
+Added Pin To Net: NetName=NetC1_1 Pin=L1-1
+Added Pin To Net: NetName=V5 Pin=L1-2
+Added Pin To Net: NetName=NetR5_1 Pin=T1-1
+Added Pin To Net: NetName=GND Pin=T1-2
+Added Pin To Net: NetName=NetR1_1 Pin=T1-3
+Added Pin To Net: NetName=NetR6_1 Pin=T2-1
+Added Pin To Net: NetName=GND Pin=T2-2
+Added Pin To Net: NetName=NetR2_1 Pin=T2-3
+Added Pin To Net: NetName=NetR4_1 Pin=T3-1
+Added Pin To Net: NetName=GND Pin=T3-2
+Added Pin To Net: NetName=NetR3_1 Pin=T3-3
+Added Pin To Net: NetName=GND Pin=X5-1
+Added Pin To Net: NetName=GND Pin=X5-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-3
+Added Pin To Net: NetName=NetD1_1 Pin=D2-1
+Added Pin To Net: NetName=NetD1_1 Pin=TP1-1
+Added Pin To Net: NetName=NetD1_1 Pin=X4-1
+Added Pin To Net: NetName=NetD1_1 Pin=X4-1
+Added Net: Name=NetD1_1

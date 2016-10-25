@@ -1,0 +1,66 @@
+Added Component: Designator=C1(C0603MD)
+Added Component: Designator=C2(ALU-G)
+Added Component: Designator=C3(ALU-D)
+Added Component: Designator=J1(DSUB-25-F-90G)
+Added Component: Designator=R1(R0603HD)
+Added Component: Designator=R2(R0603HD)
+Added Component: Designator=R3(R0603HD)
+Added Component: Designator=R4(R0603HD)
+Added Component: Designator=R5(R0603HD)
+Added Component: Designator=R6(R0603HD)
+Added Component: Designator=R7(R0603HD)
+Added Component: Designator=R8(R0603HD)
+Added Component: Designator=R9(R0603HD)
+Added Component: Designator=R10(R0603HD)
+Added Component: Designator=R11(R0603HD)
+Added Component: Designator=R12(R0603HD)
+Added Pin To Net: NetName=GND Pin=C2-N
+Added Pin To Net: NetName=GND Pin=C3-N
+Added Pin To Net: NetName=GND Pin=J1-26
+Added Pin To Net: NetName=GND Pin=J1-27
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=NetC2_P Pin=C2-P
+Added Net: Name=NetC2_P
+Added Net: Name=NetIC1_1
+Added Pin To Net: NetName=NetIC1_2 Pin=R1-2
+Added Net: Name=NetIC1_2
+Added Pin To Net: NetName=NetIC1_4 Pin=R10-2
+Added Net: Name=NetIC1_4
+Added Net: Name=NetIC2_1
+Added Pin To Net: NetName=NetIC2_2 Pin=R2-2
+Added Net: Name=NetIC2_2
+Added Pin To Net: NetName=NetIC2_4 Pin=R12-2
+Added Net: Name=NetIC2_4
+Added Net: Name=NetIC3_1
+Added Pin To Net: NetName=NetIC3_2 Pin=R3-2
+Added Net: Name=NetIC3_2
+Added Pin To Net: NetName=NetIC3_4 Pin=R8-2
+Added Net: Name=NetIC3_4
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=R7-2
+Added Net: Name=NetR4_1
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=R9-2
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_1 Pin=R11-2
+Added Net: Name=NetR6_1
+Added Net: Name=UB+
+Added Pin To Net: NetName=V5 Pin=C3-P
+Added Net: Name=V5

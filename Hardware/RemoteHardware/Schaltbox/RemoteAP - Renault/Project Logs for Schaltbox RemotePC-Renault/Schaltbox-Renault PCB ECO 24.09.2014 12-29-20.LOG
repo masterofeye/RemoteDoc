@@ -1,0 +1,9 @@
+Change Component DesignItemId : Designator=X5 Old DesignItemId=4mm-Buchse-bl New DesignItemId=Anschlusspin
+Change Component DesignItemId : Designator=X4 Old DesignItemId=4mm-Buchse-rt New DesignItemId=Anschlusspin
+Change Component Comment : Designator=X5 Old Comment=4mm-Buchse-bl New Comment=GND
+Change Component Comment : Designator=X4 Old Comment=4mm-Buchse-rt New Comment=Vin
+Change Component Designator: OldDesignator=R1 NewDesignator=R?
+Change Component Description : Designator=X4 Old Description=Bananen-Stecker 4mm New Description=Anschluss, Bohrung 1.2mm
+Change Component Description : Designator=X5 Old Description=Bananen-Stecker 4mm New Description=Anschluss, Bohrung 1.2mm
+Change Component Library : Designator=X4 Old Library=Connectors_1.SchLib New Library=Testpoints-2 - SSH.SchLib
+Change Component Library : Designator=X5 Old Library=Connectors_1.SchLib New Library=Testpoints-2 - SSH.SchLib

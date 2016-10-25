@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>132</y>
+      <w>186</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>RW::Player::SmallPlayer
+--
+- m_GraphicsVideoItem : QGraphicsVideoItem
+- m_GraphicsScene : QGraphicsScene
+- m_GraphicsView : QGraphicsView
+- m_Buffer : QBuffer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>72</x>
+      <y>450</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+QGraphicsScene</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>72</x>
+      <y>522</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+QGraphicsView</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>72</x>
+      <y>378</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+QGraphicsVideoItem</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>474</y>
+      <w>192</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=[IN]-[Out]</panel_attributes>
+    <additional_attributes>50.0;120.0;10.0;120.0;10.0;60.0;300.0;60.0;300.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>72</x>
+      <y>306</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+QMediaPlayer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>324</y>
+      <w>198</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=[IN]-[Out]</panel_attributes>
+    <additional_attributes>50.0;130.0;10.0;130.0;10.0;70.0;310.0;70.0;310.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>402</y>
+      <w>192</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=[IN]-[Out]</panel_attributes>
+    <additional_attributes>50.0;120.0;10.0;120.0;10.0;60.0;300.0;60.0;300.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>72</x>
+      <y>234</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+QBuffer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>258</y>
+      <w>198</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=[IN]-[Out]</panel_attributes>
+    <additional_attributes>50.0;120.0;10.0;120.0;10.0;60.0;310.0;60.0;310.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>246</x>
+      <y>312</y>
+      <w>156</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Über setMedia(MediaContent(),buffer)
+lässt sich der Buffer in den MediaPlayer
+übertragen
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>222</y>
+      <w>390</w>
+      <h>366</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+</diagram>

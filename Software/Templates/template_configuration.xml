@@ -1,0 +1,11 @@
+<modul name="YX">
+	<version>
+		<major></major>
+		<minor></minor>
+	</version>
+	<inputs></inputs>
+	<outputs></outputs>
+	<signal name="Z"><slot module="Y" slot="X" ></signal>
+	<ControlStruct>
+	</ControlStruct>
+</modul>
