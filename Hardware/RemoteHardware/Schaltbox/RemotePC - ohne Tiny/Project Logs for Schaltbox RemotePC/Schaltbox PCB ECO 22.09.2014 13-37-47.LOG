@@ -1,0 +1,52 @@
+Added Component: Designator=REL21(DIP14 - HE700)
+Added Component: Designator=REL22(DIP14 - HE700)
+Added Component: Designator=REL23(DIP14 - HE700)
+Added Component: Designator=REL24(DIP14 - HE700)
+Added Component: Designator=REL25(DIP14 - HE700)
+Added Component: Designator=REL26(DIP14 - HE700)
+Added Pin To Net: NetName=V5 Pin=REL21-2
+Added Pin To Net: NetName=CANL2 Pin=REL22-1
+Added Pin To Net: NetName=V5 Pin=REL22-2
+Added Pin To Net: NetName=UB+ Pin=REL23-1
+Added Pin To Net: NetName=V5 Pin=REL23-2
+Added Pin To Net: NetName=GND Pin=REL23-14
+Added Pin To Net: NetName=V5 Pin=REL24-2
+Added Pin To Net: NetName=CANH2 Pin=REL25-1
+Added Pin To Net: NetName=V5 Pin=REL25-2
+Added Pin To Net: NetName=UB+ Pin=REL26-1
+Added Pin To Net: NetName=V5 Pin=REL26-2
+Added Pin To Net: NetName=GND Pin=REL26-14
+Added Pin To Net: NetName=CANH2-BREAK Pin=REL25-6
+Added Net: Name=CANH2-BREAK
+Added Pin To Net: NetName=CANH2-GND Pin=REL26-6
+Added Net: Name=CANH2-GND
+Added Pin To Net: NetName=CANH2-OUT Pin=REL24-7
+Added Pin To Net: NetName=CANH2-OUT Pin=REL24-8
+Added Net: Name=CANH2-OUT
+Added Pin To Net: NetName=CANH2-TO Pin=REL24-6
+Added Net: Name=CANH2-TO
+Added Pin To Net: NetName=CANL2-BREAK Pin=REL22-6
+Added Net: Name=CANL2-BREAK
+Added Pin To Net: NetName=CANL2-GND Pin=REL23-6
+Added Net: Name=CANL2-GND
+Added Pin To Net: NetName=CANL2-OUT Pin=REL21-7
+Added Pin To Net: NetName=CANL2-OUT Pin=REL21-8
+Added Net: Name=CANL2-OUT
+Added Pin To Net: NetName=CANL2-TO Pin=REL21-6
+Added Net: Name=CANL2-TO
+Added Pin To Net: NetName=NetREL21_1 Pin=REL21-1
+Added Pin To Net: NetName=NetREL21_1 Pin=REL22-7
+Added Pin To Net: NetName=NetREL21_1 Pin=REL22-8
+Added Net: Name=NetREL21_1
+Added Pin To Net: NetName=NetREL21_14 Pin=REL21-14
+Added Pin To Net: NetName=NetREL21_14 Pin=REL23-7
+Added Pin To Net: NetName=NetREL21_14 Pin=REL23-8
+Added Net: Name=NetREL21_14
+Added Pin To Net: NetName=NetREL24_1 Pin=REL24-1
+Added Pin To Net: NetName=NetREL24_1 Pin=REL25-7
+Added Pin To Net: NetName=NetREL24_1 Pin=REL25-8
+Added Net: Name=NetREL24_1
+Added Pin To Net: NetName=NetREL24_14 Pin=REL24-14
+Added Pin To Net: NetName=NetREL24_14 Pin=REL26-7
+Added Pin To Net: NetName=NetREL24_14 Pin=REL26-8
+Added Net: Name=NetREL24_14

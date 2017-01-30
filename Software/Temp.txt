@@ -1,0 +1,31 @@
+
+Umgebungsvariablen 
+QTDIR= 
+NVIDIACUDEDIR=
+NVIDIANVENCDIR=
+OPENCVDIR=
+
+===================================
+
+Generic Util Files
+RW_Error.h  Enum mit allen Fehlercodecs
+RW_Version.h  Struct für die Versionierung
+RW_Util.h  Allgemeine Util funktionen
+
+========================================
+
+VideoGrabber Module 
+Prinzipiel existieren zwei mögliche Videoquellen. Zum einen die WebCam die über eine 3 Megapixel Kamera verfügt
+und die Daten mit einer maximalen Auflösung von 1920x1080 und einer Wiederholrate von 30FPS über USB sendet.
+Zum anderen gibt es die Möglichkeit die Bilddaten direkt vom "Display-Bus" abzugreifen und so sehr unverfälscht die Videodaten abzugreifen. 
+Dieser "Framegrabber", folgend nur noch mit FG bezeichnet, wird im Prototyp zunächt über USB3 angeschlossen. Letztendlich soll der Framegrabber dann
+im PC über PCI angebunden werden. Da die Daten unverfälscht abgegriffen werden ergibt sich eine extrem hohe Datenrate.
+Die Datenrate berechnet sich wie folgt: 
+1920x1080 = 2073600 Pixel
+2073600 Pixel * 8bit/Farbkanal  * 3 Kanäle = 49766400 Bit = 6220800 Byte
+6220800 Byte * 60FPS = 37324800Byte/s ~ 356Mb/s
+
+Die Daten werden im Farbformat RGB888 übermittelt, somit 
+ergibt sich die Datenrate bei HD Auflösung wie folgt: 
+
+

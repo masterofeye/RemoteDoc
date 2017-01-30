@@ -1,0 +1,589 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body { 
+			font-family : verdana;
+		}
+		td, th {  
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;	
+		}
+		th { 
+			background-color : #A6CAF0;
+		
+		}
+		th.column1, td.column1 { 
+			text-align: left;
+			width : auto; 
+		}
+		table { 
+			width : 100%; 
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3 {
+			padding-top : 0.1em;
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top
+		}
+		.front_matter_column1 {
+			text-align : right;
+		}
+		.total_column1, .total_column {
+			font-weight : bold;	
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.front_matter_column2 {
+			text-align : center;
+		}
+		.front_matter_column3 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow 
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Footprint Comparison Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Footprint Comparison Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">22.09.2014</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">15:43:27</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\AD14\Projekte\RemotePC\Schaltbox.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\AD14\Projekte\RemotePC\Schaltbox.PcbDoc">C:\Users\Public\Documents\Altium\AD14\Projekte\RemotePC\Schaltbox.PcbDoc</acronym></a></td>
+</tr>
+</table>
+<hr><a name="IDASAEFC"><h2>Contents</h2></a><p class="contents_level1"><a href="#IDASAEFC">Contents</a></p>
+<p class="contents_level1"><a href="#IDAWAEFC">Components Status Summary</a></p>
+<p class="contents_level2"><a href="#IDAZAEFC">Matched Components List<br></a></p><br><hr><a name="IDAWAEFC"><h2>Components Status Summary</h2></a><h2>Matched Components List</h2><a name="IDAZAEFC"><table>
+<tr>
+<th class="column1">Designator</th>
+<th class="column2">Footprint</th>
+<th class="column3">Footprint reference</th>
+<th class="column4">Footprint to reference Library</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">C1</td>
+<td style="Width:20%" class="column2">C0603MD</td>
+<td style="Width:20%" class="column3">C0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSE.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">C2</td>
+<td style="Width:20%" class="column2">ALU-G</td>
+<td style="Width:20%" class="column3">ALU-G</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">C3</td>
+<td style="Width:20%" class="column2">ALU-D</td>
+<td style="Width:20%" class="column3">ALU-D</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSE.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">C4</td>
+<td style="Width:20%" class="column2">C0603MD</td>
+<td style="Width:20%" class="column3">C0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">C5</td>
+<td style="Width:20%" class="column2">C0603MD</td>
+<td style="Width:20%" class="column3">C0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">C6</td>
+<td style="Width:20%" class="column2">C0603MD</td>
+<td style="Width:20%" class="column3">C0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">C7</td>
+<td style="Width:20%" class="column2">C0603MD</td>
+<td style="Width:20%" class="column3">C0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">D1</td>
+<td style="Width:20%" class="column2">TO252-3_LD_(DPAK)</td>
+<td style="Width:20%" class="column3">TO252-3_LD_(DPAK)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use_neu - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">D2</td>
+<td style="Width:20%" class="column2">SMC_MD_(DO214AB)</td>
+<td style="Width:20%" class="column3">SMC_MD_(DO214AB)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use_neu - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">D3</td>
+<td style="Width:20%" class="column2">SMA_LD_(DO214AC)</td>
+<td style="Width:20%" class="column3">SMA_LD_(DO214AC)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use_neu - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">D4</td>
+<td style="Width:20%" class="column2">Duo-LED 3mm</td>
+<td style="Width:20%" class="column3">Duo-LED 3mm</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">D5</td>
+<td style="Width:20%" class="column2">Duo-LED 3mm</td>
+<td style="Width:20%" class="column3">Duo-LED 3mm</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">D6</td>
+<td style="Width:20%" class="column2">Duo-LED 3mm</td>
+<td style="Width:20%" class="column3">Duo-LED 3mm</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">D7</td>
+<td style="Width:20%" class="column2">Duo-LED 3mm</td>
+<td style="Width:20%" class="column3">Duo-LED 3mm</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">IC3</td>
+<td style="Width:20%" class="column2">TO252-5_MD_(DPAK)</td>
+<td style="Width:20%" class="column3">TO252-5_MD_(DPAK)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">IC4</td>
+<td style="Width:20%" class="column2">M08A_N</td>
+<td style="Width:20%" class="column3">M08A_N</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-14_LIB\National Semiconductor\NSC Switcher.IntLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">IC5</td>
+<td style="Width:20%" class="column2">SOT363_MD_(SC88 / SC70-6)</td>
+<td style="Width:20%" class="column3">SOT363_MD_(SC88 / SC70-6)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">IC6</td>
+<td style="Width:20%" class="column2">SOIC8_LD_(SO8)</td>
+<td style="Width:20%" class="column3">SOIC8_LD_(SO8)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">IC7</td>
+<td style="Width:20%" class="column2">SOT363_MD_(SC88 / SC70-6)</td>
+<td style="Width:20%" class="column3">SOT363_MD_(SC88 / SC70-6)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">IC8</td>
+<td style="Width:20%" class="column2">SOT23_MD</td>
+<td style="Width:20%" class="column3">SOT23_MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">IC9</td>
+<td style="Width:20%" class="column2">SOIC8_LD_(SO8)</td>
+<td style="Width:20%" class="column3">SOIC8_LD_(SO8)</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">IC10</td>
+<td style="Width:20%" class="column2">SOT23_MD</td>
+<td style="Width:20%" class="column3">SOT23_MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">L1</td>
+<td style="Width:20%" class="column2">L_B82464-G4</td>
+<td style="Width:20%" class="column3">L_B82464-G4</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH_neu.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">L2</td>
+<td style="Width:20%" class="column2">Drossel-USB</td>
+<td style="Width:20%" class="column3">Drossel-USB</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">L3</td>
+<td style="Width:20%" class="column2">CAN-Drossel-SL3</td>
+<td style="Width:20%" class="column3">CAN-Drossel-SL3</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">L4</td>
+<td style="Width:20%" class="column2">Drossel-USB</td>
+<td style="Width:20%" class="column3">Drossel-USB</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">L5</td>
+<td style="Width:20%" class="column2">CAN-Drossel-SL3</td>
+<td style="Width:20%" class="column3">CAN-Drossel-SL3</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">M1</td>
+<td style="Width:20%" class="column2">Tiny-CAN M1</td>
+<td style="Width:20%" class="column3">Tiny-CAN M1</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">M2</td>
+<td style="Width:20%" class="column2">Tiny-CAN M1</td>
+<td style="Width:20%" class="column3">Tiny-CAN M1</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R1</td>
+<td style="Width:20%" class="column2">R2512HD</td>
+<td style="Width:20%" class="column3">R2512HD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">R3</td>
+<td style="Width:20%" class="column2">R0603HD</td>
+<td style="Width:20%" class="column3">R0603HD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSE.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R4</td>
+<td style="Width:20%" class="column2">R0603HD</td>
+<td style="Width:20%" class="column3">R0603HD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSE.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">R7</td>
+<td style="Width:20%" class="column2">R0603HD</td>
+<td style="Width:20%" class="column3">R0603HD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSE.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R8</td>
+<td style="Width:20%" class="column2">R0603HD</td>
+<td style="Width:20%" class="column3">R0603HD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSE.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">R13</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R14</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">R15</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R16</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">R17</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R18</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">R19</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">R20</td>
+<td style="Width:20%" class="column2">R0603MD</td>
+<td style="Width:20%" class="column3">R0603MD</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\RCL SMD - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL1</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">REL2</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL3</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">REL4</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL5</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">REL6</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL11</td>
+<td style="Width:20%" class="column2">REL_HFD41</td>
+<td style="Width:20%" class="column3">REL_HFD41</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">REL21</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL22</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">REL23</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL24</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">REL25</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">REL26</td>
+<td style="Width:20%" class="column2">DIP14 - HE700</td>
+<td style="Width:20%" class="column3">DIP14 - HE700</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\IC Packages - General Use - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">T3</td>
+<td style="Width:20%" class="column2">SOT23_L</td>
+<td style="Width:20%" class="column3">SOT23_L</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Transistoren-Low Power.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">TP1</td>
+<td style="Width:20%" class="column2">TESTPAD-1.2mm</td>
+<td style="Width:20%" class="column3">TESTPAD-1.2mm</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Testpoints - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">X1</td>
+<td style="Width:20%" class="column2">USB_TypB</td>
+<td style="Width:20%" class="column3">USB_TypB</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">X2</td>
+<td style="Width:20%" class="column2">USB_TypB</td>
+<td style="Width:20%" class="column3">USB_TypB</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">X3</td>
+<td style="Width:20%" class="column2">4mm-Bu_ liegend-rt</td>
+<td style="Width:20%" class="column3">4mm-Bu_ liegend-rt</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">X4</td>
+<td style="Width:20%" class="column2">4mm-Bu_ liegend-rt</td>
+<td style="Width:20%" class="column3">4mm-Bu_ liegend-rt</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">X5</td>
+<td style="Width:20%" class="column2">4mm-Bu_ liegend-sw</td>
+<td style="Width:20%" class="column3">4mm-Bu_ liegend-sw</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">X6</td>
+<td style="Width:20%" class="column2">DSUB1.385-2H9</td>
+<td style="Width:20%" class="column3">DSUB1.385-2H9</td>
+<td style="Width:60%" class="column4">C:\Users\Public\Documents\Altium\AD13\Library\Miscellaneous Connectors.IntLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">X7</td>
+<td style="Width:20%" class="column2">DSUB1.385-2H9</td>
+<td style="Width:20%" class="column3">DSUB1.385-2H9</td>
+<td style="Width:60%" class="column4">C:\Users\Public\Documents\Altium\AD13\Library\Miscellaneous Connectors.IntLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">X8</td>
+<td style="Width:20%" class="column2">SchneidKlemm_40</td>
+<td style="Width:20%" class="column3">SchneidKlemm_40</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Connectors_SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">X9</td>
+<td style="Width:20%" class="column2">Loetoese-3.2</td>
+<td style="Width:20%" class="column3">Loetoese-3.2</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Testpoints - SSH.PcbLib</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">X10</td>
+<td style="Width:20%" class="column2">Loetoese-3.2</td>
+<td style="Width:20%" class="column3">Loetoese-3.2</td>
+<td style="Width:60%" class="column4">C:\ALTIUM-10_LIB\SSH\Testpoints - SSH.PcbLib</td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><hr>
+</body>
+</html>

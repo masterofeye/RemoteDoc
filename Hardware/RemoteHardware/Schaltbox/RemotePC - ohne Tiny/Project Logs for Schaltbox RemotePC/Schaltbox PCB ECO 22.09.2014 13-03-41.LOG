@@ -1,0 +1,70 @@
+Change Component DesignItemId : Designator=X7 Old DesignItemId=4mm-Buchse-rt New DesignItemId=D Connector 9
+Change Component Footprint: Designator=X7 Old Footprint=4mm-Bu_ liegend-rt New Footprint=DSUB1.385-2H9
+Change Component Comment : Designator=X7 Old Comment=4mm-Buchse-rt New Comment=CAN Extern
+Added Component: Designator=X1(SchneidKlemm_40)
+Added Pin To Net: NetName=V5 Pin=REL1-2
+Added Pin To Net: NetName=V5 Pin=REL2-2
+Added Pin To Net: NetName=UB+ Pin=REL3-1
+Added Pin To Net: NetName=V5 Pin=REL3-2
+Added Pin To Net: NetName=GND Pin=REL3-14
+Added Pin To Net: NetName=V5 Pin=REL4-2
+Added Pin To Net: NetName=V5 Pin=REL5-2
+Added Pin To Net: NetName=UB+ Pin=REL6-1
+Added Pin To Net: NetName=V5 Pin=REL6-2
+Added Pin To Net: NetName=GND Pin=REL6-14
+Added Pin To Net: NetName=GND Pin=X7-3
+Added Pin To Net: NetName=GND Pin=X7-6
+Added Pin To Net: NetName=GND Pin=X7-10
+Added Pin To Net: NetName=GND Pin=X7-11
+Added Pin To Net: NetName=CANH1-BREAK Pin=REL5-6
+Added Net: Name=CANH1-BREAK
+Added Pin To Net: NetName=CANH1-GND Pin=REL6-6
+Added Net: Name=CANH1-GND
+Added Pin To Net: NetName=CANH1-OUT Pin=REL4-7
+Added Pin To Net: NetName=CANH1-OUT Pin=REL4-8
+Added Net: Name=CANH1-OUT
+Added Pin To Net: NetName=CANH1-TO Pin=REL4-6
+Added Net: Name=CANH1-TO
+Added Pin To Net: NetName=CANH1 Pin=IC8-2
+Added Pin To Net: NetName=CANH1 Pin=L3-6
+Added Pin To Net: NetName=CANH1 Pin=REL5-1
+Added Pin To Net: NetName=CANH1 Pin=X6-7
+Added Net: Name=CANH1
+Added Pin To Net: NetName=CANH2 Pin=IC10-2
+Added Pin To Net: NetName=CANH2 Pin=L5-6
+Added Pin To Net: NetName=CANH2 Pin=X7-7
+Added Net: Name=CANH2
+Added Pin To Net: NetName=CANL1-BREAK Pin=REL2-6
+Added Net: Name=CANL1-BREAK
+Added Pin To Net: NetName=CANL1-GND Pin=REL3-6
+Added Net: Name=CANL1-GND
+Added Pin To Net: NetName=CANL1-OUT Pin=REL1-7
+Added Pin To Net: NetName=CANL1-OUT Pin=REL1-8
+Added Net: Name=CANL1-OUT
+Added Pin To Net: NetName=CANL1-TO Pin=REL1-6
+Added Net: Name=CANL1-TO
+Added Pin To Net: NetName=CANL1 Pin=IC8-1
+Added Pin To Net: NetName=CANL1 Pin=L3-4
+Added Pin To Net: NetName=CANL1 Pin=REL2-1
+Added Pin To Net: NetName=CANL1 Pin=X6-2
+Added Net: Name=CANL1
+Added Pin To Net: NetName=CANL2 Pin=IC10-1
+Added Pin To Net: NetName=CANL2 Pin=L5-4
+Added Pin To Net: NetName=CANL2 Pin=X7-2
+Added Net: Name=CANL2
+Added Pin To Net: NetName=NetREL1_1 Pin=REL1-1
+Added Pin To Net: NetName=NetREL1_1 Pin=REL2-7
+Added Pin To Net: NetName=NetREL1_1 Pin=REL2-8
+Added Net: Name=NetREL1_1
+Added Pin To Net: NetName=NetREL1_14 Pin=REL1-14
+Added Pin To Net: NetName=NetREL1_14 Pin=REL3-7
+Added Pin To Net: NetName=NetREL1_14 Pin=REL3-8
+Added Net: Name=NetREL1_14
+Added Pin To Net: NetName=NetREL4_1 Pin=REL4-1
+Added Pin To Net: NetName=NetREL4_1 Pin=REL5-7
+Added Pin To Net: NetName=NetREL4_1 Pin=REL5-8
+Added Net: Name=NetREL4_1
+Added Pin To Net: NetName=NetREL4_14 Pin=REL4-14
+Added Pin To Net: NetName=NetREL4_14 Pin=REL6-7
+Added Pin To Net: NetName=NetREL4_14 Pin=REL6-8
+Added Net: Name=NetREL4_14

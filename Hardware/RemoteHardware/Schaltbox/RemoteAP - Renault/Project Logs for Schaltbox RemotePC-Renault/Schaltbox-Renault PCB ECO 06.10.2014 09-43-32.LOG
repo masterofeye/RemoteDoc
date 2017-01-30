@@ -1,0 +1,7 @@
+Added Component: Designator=X29(Stifte_1x6)
+Added Pin To Net: NetName=ADAC Pin=X29-1
+Added Pin To Net: NetName=S1 Pin=X29-2
+Added Pin To Net: NetName=S2 Pin=X29-3
+Added Pin To Net: NetName=S3 Pin=X29-4
+Added Pin To Net: NetName=S4 Pin=X29-5
+Added Pin To Net: NetName=ADAC_E Pin=X29-6

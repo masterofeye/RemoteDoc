@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=SOUND Pin=REL?-6
+Change Component Designator: OldDesignator=REL? NewDesignator=REL14
+Change Component Designator: OldDesignator=REL? NewDesignator=REL15
+Change Component Designator: OldDesignator=REL? NewDesignator=REL16
+Change Component Designator: OldDesignator=REL? NewDesignator=REL17
+Change Component Designator: OldDesignator=REL? NewDesignator=REL18
+Added Pin To Net: NetName=FLASH_REL Pin=REL14-6
+Added Pin To Net: NetName=V5 Pin=REL15-2
+Added Pin To Net: NetName=SOUND Pin=REL15-6
+Added Pin To Net: NetName=V5 Pin=REL16-2
+Added Pin To Net: NetName=BILD_BOX Pin=REL16-6
+Added Pin To Net: NetName=V5 Pin=REL17-2
+Added Pin To Net: NetName=SOUND Pin=REL17-6
+Added Pin To Net: NetName=V5 Pin=REL18-2
+Added Pin To Net: NetName=IDO 15 Pin=REL18-6

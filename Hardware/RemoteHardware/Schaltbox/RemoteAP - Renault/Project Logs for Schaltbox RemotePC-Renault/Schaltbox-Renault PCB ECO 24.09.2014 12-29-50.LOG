@@ -1,0 +1,4 @@
+Added Component: Designator=X4(Loetoese-3.2)
+Added Component: Designator=X5(Loetoese-3.2)
+Added Pin To Net: NetName=NetD1_1 Pin=X4-1
+Added Pin To Net: NetName=GND Pin=X5-1

@@ -1,0 +1,6 @@
+Change Component Comment : Designator=X6 Old Comment=CAN Extern New Comment=CAN In
+Change Component Comment : Designator=X7 Old Comment=CAN Extern New Comment=CAN Out
+Added Pin To Net: NetName=CANH1-OUT Pin=IC10-1
+Added Pin To Net: NetName=CANL1-OUT Pin=IC10-2
+Added Pin To Net: NetName=CANL1-OUT Pin=X7-2
+Added Pin To Net: NetName=CANH1-OUT Pin=X7-7

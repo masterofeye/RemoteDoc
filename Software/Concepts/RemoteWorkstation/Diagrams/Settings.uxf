@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>360</y>
+      <w>360</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>RW::XMLSettings
+--
++ XMLHelper
+...
+--
+# ReadSettings(Config : ConfigurationContainer) : RW_Status
+# WriteSettings(Config : ConfigurationContainer) : RW_Status
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>99</y>
+      <w>369</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>/RW::AbstractSettings/
+--
++ m_Logger : spdLogger
++ m_Configuration : ConfigurationContainer
+--
++ AbstractSettings()
++ ~AbstractSettings()
+/# ReadSettings(Config : ConfigurationContainer) : RW_Status/
+/# WriteSettings(Config : ConfigurationContainer) : RW_Status/
+--
+/+ IsConfigurationReady() : bool/
+/+ Flush() : RW_Status/
++ GetSettings() :
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>360</y>
+      <w>360</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>RW::SQLSettings
+--
++ SQLHelper
+...
+--
+# ReadSettings(Config : ConfigurationContainer) : RW_Status
+# WriteSettings(Config : ConfigurationContainer) : RW_Status
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>450</x>
+      <y>360</y>
+      <w>180</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Some helper functions to 
+encapsulate small functions
+to read and write XML routines
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1017</x>
+      <y>369</y>
+      <w>180</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Some helper functions to 
+encapsulate small functions
+to read and write SQL routines
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>261</y>
+      <w>27</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>261</y>
+      <w>576</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>620.0;110.0;620.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>945</x>
+      <y>99</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+nenConfigurationKey
+--
+nenVideo_Height
+nenVideo_Width
+...
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>72</x>
+      <y>81</y>
+      <w>1152</w>
+      <h>387</h>
+    </coordinates>
+    <panel_attributes>
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>522</y>
+      <w>378</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>ConfigurationContainer
+--
+- m_Confguration : Map&lt;nenConfigurationKey,QVariant&gt;
+--
++ Add(nenConfigurationKey,QVariant) : RW_Status
++ FindValueByKey(nenConfigurationKey,&amp;QVariant) : RW_Status
++ Contains(nenConfigurationKey) : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

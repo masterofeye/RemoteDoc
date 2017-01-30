@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=NetL1_5 Pin=L1-5
+Removed Pin From Net: NetName=NetC1_1 Pin=L2-1
+Removed Pin From Net: NetName=V5 Pin=L2-2
+Removed Pin From Net: NetName=NIVCOD_RES Pin=R28-1
+Removed Pin From Net: NetName=V5 Pin=R28-2
+Removed Pin From Net: NetName=NetIC14_1 Pin=R29-1
+Removed Pin From Net: NetName=V5 Pin=R29-2
+Removed Pin From Net: NetName=NetREL14_1 Pin=X25-1
+Removed Pin From Net: NetName=NetREL14_7 Pin=X25-2
+Removed Pin From Net: NetName=NetREL14_14 Pin=X25-3
+Removed Pin From Net: NetName=NetREL15_1 Pin=X26-1
+Removed Pin From Net: NetName=NetREL15_7 Pin=X26-2
+Removed Pin From Net: NetName=NetREL15_14 Pin=X26-3
+Removed Pin From Net: NetName=NetREL16_1 Pin=X27-1
+Removed Pin From Net: NetName=NetREL16_7 Pin=X27-2
+Removed Pin From Net: NetName=NetREL16_14 Pin=X27-3
+Change Component Comment : Designator=L1 Old Comment=SM-LP-5001 New Comment=Uebertrager
+Added Component: Designator=L2(L_B82464-G4)
+Added Component: Designator=R28(R0603MD)
+Added Component: Designator=R29(R0603MD)
+Added Component: Designator=X25(Buchse_1x3)
+Added Component: Designator=X26(Buchse_1x3)
+Added Component: Designator=X27(Buchse_1x3)
+Added Pin To Net: NetName=PCGND Pin=IC11-2
+Added Pin To Net: NetName=NetL1_5 Pin=L1-4
+Added Pin To Net: NetName=NetC1_1 Pin=L2-1
+Added Pin To Net: NetName=V5 Pin=L2-2
+Added Pin To Net: NetName=V5 Pin=R7-2
+Added Pin To Net: NetName=NIVCOD_RES Pin=R28-1
+Added Pin To Net: NetName=V5 Pin=R28-2
+Added Pin To Net: NetName=NetIC14_1 Pin=R29-1
+Added Pin To Net: NetName=V5 Pin=R29-2
+Added Pin To Net: NetName=NetREL14_1 Pin=X25-1
+Added Pin To Net: NetName=NetREL14_7 Pin=X25-2
+Added Pin To Net: NetName=NetREL14_14 Pin=X25-3
+Added Pin To Net: NetName=NetREL15_1 Pin=X26-1
+Added Pin To Net: NetName=NetREL15_7 Pin=X26-2
+Added Pin To Net: NetName=NetREL15_14 Pin=X26-3
+Added Pin To Net: NetName=NetREL16_1 Pin=X27-1
+Added Pin To Net: NetName=NetREL16_7 Pin=X27-2
+Added Pin To Net: NetName=NetREL16_14 Pin=X27-3
+Change Net Name : Old Net Name=NetL1_5 New Net Name=NetL1_4
